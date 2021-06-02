@@ -5,11 +5,14 @@ class PagesController < ApplicationController
   end
 
   def search  
+    
+  end
+  def result
     if params[:search].blank?  
-     # redirect_to()#HOME => root_path #, alert: "Empty field!") and return 
-    else  
-      @parameter = params[:search]  
-      @results = User.where("city ILIKE :search", search: @parameter)    
-    end  
+      redirect_to(root_path, alert: "Empty field!") and return   
+     else  
+       @parameter = params[:search]  
+       @results = User.where("city ILIKE :search", search: @parameter)    
+     end  
   end
 end
