@@ -1,0 +1,5 @@
+0000000000000000000000000000000000000000 8d8c40a32c8a88d9646bef723c8a91b9f312e1dd conor quarry <conordquarry@gmail.com> 1622468408 +0100	clone: from git@github.com:Dusan-Pejcic/quouch.git
+8d8c40a32c8a88d9646bef723c8a91b9f312e1dd 0d38ac2ce253cf99d3c709398a3b6650a04c7882 conor quarry <conordquarry@gmail.com> 1622540335 +0100	pull: Fast-forward
+0d38ac2ce253cf99d3c709398a3b6650a04c7882 3aa8980c4babeae4fbfcff57c9115346ca61f18f conor quarry <conordquarry@gmail.com> 1622543438 +0100	pull: Fast-forward
+3aa8980c4babeae4fbfcff57c9115346ca61f18f b4bb395ca93c1d07ce1a3a8b0a22632e0bf0b101 conor quarry <conordquarry@gmail.com> 1622554189 +0100	pull origin master: Fast-forward
+b4bb395ca93c1d07ce1a3a8b0a22632e0bf0b101 3f12476f9f21a0e0f910b2fb098469049f213bc0 conor quarry <conordquarry@gmail.com> 1622559151 +0100	commit: gemfileissues
