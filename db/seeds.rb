@@ -5,7 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-User.destroy.all
+User.destroy_all
 
 
 User.create!( name: 'doraa',
@@ -13,7 +13,7 @@ User.create!( name: 'doraa',
   city: 'berlin',
   username: 'doraa',
   bio: 'about me',
-  email: 'dora123@yahoo.fr',
+  email: 'dora12443@yahoo.fr',
   password: 123456
 )
 
@@ -22,7 +22,7 @@ User.create!( name: 'Matz',
   city: 'Berlin',
   username: 'coco',
   bio: 'about me',
-  email: 'maramedy@yahoo.fr',
+  email: 'maramedy4444@yahoo.fr',
   password: 123456
 )
 User.create!( name: 'dora',
@@ -30,7 +30,7 @@ User.create!( name: 'dora',
   city: 'köln',
   username: 'dora',
   bio: 'about me',
-  email: 'dora@yahoo.fr',
+  email: 'dora4444@yahoo.fr',
   password: 123456
 )
 User.create!( name: 'sylvie',
@@ -38,16 +38,16 @@ User.create!( name: 'sylvie',
   city: 'berlin',
   username: 'sylvie',
   bio: 'about me',
-  email: 'sylvie@yahoo.fr',
+  email: 'sylvie4444@yahoo.fr',
   password: 123456
 )
 
-User.create!( name: 'sylvie',
+User.create!( name: 'Luisa',
   address: 'Rudi-Dutschke-Straße 22, 10969 Berlin',
   city: 'berlin',
-  username: 'sylvie',
+  username: 'Lou',
   bio: 'about me',
-  email: 'sylvie@yahoo.fr',
+  email: 'Luisa@yahoo.fr',
   password: 123456
 )
 
@@ -56,7 +56,7 @@ User.create!( name: 'cathy',
   city: 'Berlin',
   username: 'cathe',
   bio: 'about me',
-  email: 'cathy@yahoo.fr',
+  email: 'cathy4444@yahoo.fr',
   password: 123456
 )
 
@@ -65,7 +65,7 @@ User.create!( name: 'Nadine',
   city: 'Berlin',
   username: 'nadine',
   bio: 'about me',
-  email: 'nadine@yahoo.fr',
+  email: 'nadine44444@yahoo.fr',
   password: 123456
 )
 
@@ -74,7 +74,7 @@ User.create!( name: 'medy',
   city: 'Berlin',
   username: 'meddd',
   bio: 'about me',
-  email: 'med@yahoo.fr',
+  email: 'med3333@yahoo.fr',
   password: 123456
 )
 
@@ -83,7 +83,7 @@ User.create!( name: 'conor',
   city: 'Berlin',
   username: 'conor',
   bio: 'about me',
-  email: 'conor@yahoo.fr',
+  email: 'conor3333@yahoo.fr',
   password: 123456
 )
 
@@ -92,7 +92,7 @@ User.create!( name: 'Leonie',
   city: 'Berlin',
   username: 'leonie',
   bio: 'about me',
-  email: 'leonie@yahoo.fr',
+  email: 'leonie33333@yahoo.fr',
   password: 123456
 )
 
@@ -101,7 +101,7 @@ User.create!( name: 'nora von ',
   city: 'Berlin',
   username: 'noraaa',
   bio: 'about me',
-  email: 'noraaa@yahoo.fr',
+  email: 'noraaa33333@yahoo.fr',
   password: 123456
 )
 
@@ -110,6 +110,6 @@ User.create!( name: 'uwe',
   city: 'Berlin',
   username: 'uwe',
   bio: 'about me',
-  email: 'med@yahoo.fr',
+  email: 'medffffff@yahoo.fr',
   password: 123456
 )
