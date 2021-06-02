@@ -5,36 +5,111 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-Review.destroy_all
+User.destroy.all
 
-puts "Seeding..."
-User.create!( name: 'Med',
-  address: 'berlin, an der strasse',
-  city: 'Berlin',
-  username:'mara',
-  bio: 'about me',
-  email:  'maramm@yahoo.fr',
-  password: 123456
-
-)
 
 User.create!( name: 'doraa',
-  address: 'köln, an der strasse',
-  city: 'köln',
-  username:'doraa',
+  address: 'Rudi-Dutschke-Straße 26, 10969 Berlin',
+  city: 'berlin',
+  username: 'doraa',
   bio: 'about me',
-  email:  'dora123@yahoo.fr',
+  email: 'dora123@yahoo.fr',
   password: 123456
-
 )
-User.create!( name: 'nora ok',
-  address: 'berlin, an der strasse',
+
+User.create!( name: 'Matz',
+  address: 'Rudi-Dutschke-Straße 26, 10969 Berlin',
   city: 'Berlin',
-  username:'noranora',
+  username: 'coco',
   bio: 'about me',
-  email:  'noranora@yahoo.fr',
+  email: 'maramedy@yahoo.fr',
   password: 123456
-
+)
+User.create!( name: 'dora',
+  address: 'Rudi-Dutschke-Straße 25, 10969 Berlin',
+  city: 'köln',
+  username: 'dora',
+  bio: 'about me',
+  email: 'dora@yahoo.fr',
+  password: 123456
+)
+User.create!( name: 'sylvie',
+  address: 'Rudi-Dutschke-Straße 26, 10969 Berlin',
+  city: 'berlin',
+  username: 'sylvie',
+  bio: 'about me',
+  email: 'sylvie@yahoo.fr',
+  password: 123456
 )
 
-puts 'User created.'
+User.create!( name: 'sylvie',
+  address: 'Rudi-Dutschke-Straße 22, 10969 Berlin',
+  city: 'berlin',
+  username: 'sylvie',
+  bio: 'about me',
+  email: 'sylvie@yahoo.fr',
+  password: 123456
+)
+
+User.create!( name: 'cathy',
+  address: 'Rudi-Dutschke-Straße 25, 10969 Berlin',
+  city: 'Berlin',
+  username: 'cathe',
+  bio: 'about me',
+  email: 'cathy@yahoo.fr',
+  password: 123456
+)
+
+User.create!( name: 'Nadine',
+  address: 'Rudi-Dutschke-Straße 27, 10969 Berlin',
+  city: 'Berlin',
+  username: 'nadine',
+  bio: 'about me',
+  email: 'nadine@yahoo.fr',
+  password: 123456
+)
+
+User.create!( name: 'medy',
+  address: 'Rudi-Dutschke-Straße 21, 10969 Berlin',
+  city: 'Berlin',
+  username: 'meddd',
+  bio: 'about me',
+  email: 'med@yahoo.fr',
+  password: 123456
+)
+
+User.create!( name: 'conor',
+  address: 'Rudi-Dutschke-Straße 20, 10969 Berlin',
+  city: 'Berlin',
+  username: 'conor',
+  bio: 'about me',
+  email: 'conor@yahoo.fr',
+  password: 123456
+)
+
+User.create!( name: 'Leonie',
+  address: 'Rudi-Dutschke-Straße 21, 10969 Berlin',
+  city: 'Berlin',
+  username: 'leonie',
+  bio: 'about me',
+  email: 'leonie@yahoo.fr',
+  password: 123456
+)
+
+User.create!( name: 'nora von ',
+  address: 'Rudi-Dutschke-Straße 22, 10969 Berlin',
+  city: 'Berlin',
+  username: 'noraaa',
+  bio: 'about me',
+  email: 'noraaa@yahoo.fr',
+  password: 123456
+)
+
+User.create!( name: 'uwe',
+  address: 'Rudi-Dutschke-Straße 29, 10969 Berlin',
+  city: 'Berlin',
+  username: 'uwe',
+  bio: 'about me',
+  email: 'med@yahoo.fr',
+  password: 123456
+)
