@@ -9,6 +9,30 @@
   padding: 0 0 150px 0;
 }
 
+.banner-two {
+  height: 100vh;
+  background-image: asset-url('ku.jpg');
+  // display: flex;
+  // justify-content: space-around;
+  // align-items: top;
+  background-size: cover;
+  background-position: center;
+  padding: 0 0 150px 0;
+  h1 {
+  margin: 0;
+  color: black;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+  font-size: 80px;
+  font-weight: lighter;
+}
+  p {
+  font-size: 20px;
+  color: black;
+  opacity: .7;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+}
+
 .flex-wrapper{
   display:flex;
   flex-direction: column;
