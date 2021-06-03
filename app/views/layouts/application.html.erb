@@ -13,10 +13,10 @@
   </head>
 
   <body>
-    <% if !current_page?(controller: "pages", action: "home") %>
+    <% unless current_page?(controller: "pages", action: "home") %>
     <%= render 'shared/navbar' %>
-    <%= render 'shared/flashes' %>
     <% end %>
+    <%= render 'shared/flashes' %>
 
     <%= yield %>
   </body>
