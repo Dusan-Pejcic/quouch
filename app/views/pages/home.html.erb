@@ -4,8 +4,8 @@
     <p>Couchsurfing from a female and queer perspective</p>
 <%= form_tag(users_path, :method => "get",
     class: 'navbar-form navbar-left' ) do %>
-  <div class="input-group search-bar">
-    <%= search_field_tag :search, params[:search], placeholder: "Where do you want to go?", class: "form-control" %>
+  <div class="input-group" style="border-radius: 100vh">
+    <%= search_field_tag :search, params[:search], placeholder: "Where do you want to go?", class: "form-control search-bar" %>
     <div class="input-group-btn">
       <%= button_tag "Search", :class => 'btn btn-info glyphicon glyphicon-search',:name => nil%>
     </div>
