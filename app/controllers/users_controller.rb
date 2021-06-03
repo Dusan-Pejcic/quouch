@@ -1,25 +1,18 @@
 class UsersController < ApplicationController
-  skip_before_action :authenticate_user!, only: [ :home, :search, :show ]
+  skip_before_action :authenticate_user!, only: [ :index, :show ]
 
   def index
-    @users = User.all
-  end
+    @users = policy_scope(User).order(created_at: :desc)
+    if !params[:search].blank?
+     @parameter = params[:search]
+     @users = @users.where("city ILIKE :search", search: @parameter)
+   end
+ end
 
-  def show
-    @user = User.find(params[:id])
-  end
+ def show
+  @user = User.find(params[:id])
+  authorize @user
+end
 
-  def new
-    @user = User.new
-    authorize @user
-  end
-
-  def edit
-
-  end
-
-  def update
-    authorize @user
-  end
 
 end
