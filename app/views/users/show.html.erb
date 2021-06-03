@@ -4,7 +4,7 @@
 
 
     <div class="row d-flex mt-5">
-        <div class="img-contianer col-md-3 ">
+        <div class="img-contianer col-md-4 ">
             <img class="profile-picture mb-4" src="<%= @user.profile_picture_url %>" alt="">
 
             <div class="name-and-availability-container d-flex">
@@ -18,12 +18,14 @@
                     
 
         </div>
-        <div class="text-container col-md-7 mb-5">
+        <div class="text-container col-md-8 mb-5">
             <p class='user-card-bio'><%= @user.bio %></p>
             <p class='user-card-description'><%= @user.description %></p>
-            <%= link_to "Contact", confirmation_path :class => "btn btn-info ml-auto"%>
+<%#             <%= link_to "Contact", confirmation_path :class => "btn btn-info ml-auto"%>
+           <%= link_to "Contact me", { :controller => "pages", :action => "confirmation"}, class: "btn btn-info ml-auto" %>
+
 <%#             <button type="button" class="btn btn-info ml-auto">Contact <%= @user.name %></button>
- %>
+ 
         </div>
 
         <div class="couch-img-container">
