@@ -10,8 +10,11 @@
 }
 
 .banner-content {
-  padding-bottom: 200px;
-  padding-right: 50px;
+  // padding-bottom: 50vh;
+  // padding-right: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .banner h1 {

@@ -1,17 +1,17 @@
-<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)) image-url('sun.jpg')">
+<div class="banner">
 <div class = "banner-content">
   <h1>quouch</h1>
     <p>Couchsurfing from a female and queer perspective</p>
 <%= form_tag(users_path, :method => "get",
-    class: 'navbar-form navbar-left') do %>
-  <div class="input-group">
-    <%= search_field_tag :search, params[:search], placeholder: "Search", class: "form-control" %>
+    class: 'navbar-form navbar-left' ) do %>
+  <div class="input-group" style="border-radius: 100vh">
+    <%= search_field_tag :search, params[:search], placeholder: "Where do you want to go?", class: "form-control search-bar" %>
     <div class="input-group-btn">
-      <%= button_tag "", :class => 'btn btn-info glyphicon glyphicon-search',:name => nil%>
+      <%= button_tag "Search", :class => 'btn btn-info glyphicon glyphicon-search',:name => nil%>
     </div>
   </div>
 <% end %>
-    
+
   </div>
 </div>
 
