@@ -13,4 +13,11 @@ class UserPolicy < ApplicationPolicy
     true
   end
 
+  def show?
+    true
+  end
+
+  def update?
+    user == record.User
+  end
 end

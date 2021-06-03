@@ -14,5 +14,12 @@ class UsersController < ApplicationController
     authorize @user
   end
 
+  def edit
+
+  end
+
+  def update
+    authorize @user
+  end
 
 end
