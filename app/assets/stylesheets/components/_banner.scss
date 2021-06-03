@@ -1,6 +1,6 @@
 .banner {
   height: 100vh;
-  background-image: asset-url('ku.jpg');
+  background-image: asset-url('sun.jpg');
   display: flex;
   justify-content: space-around;
   align-items: top;
@@ -12,9 +12,11 @@
 .banner h1 {
   margin: 0;
   color: white;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-  font-size: 32px;
-  font-weight: bold;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+  font-size: 80px;
+  font-weight: lighter;
+  padding-top: 30px;
+  padding-bottom: 10px;
 }
 
 .banner h2 {
