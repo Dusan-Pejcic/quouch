@@ -5,7 +5,7 @@
 }
 .img-contianer{
   flex: 1; 
-  img{
+  .profile-picture{
     height: 70%;
     border-radius: 50%;
 } 
@@ -14,16 +14,17 @@
     flex: 1;
 }
 
-/* .couch-img{
-    width: calc(100% / 3);
-} */
-
 .couch-img-container{
     display: flex;
     margin-top: 50px;
     img{
         width: calc(100% / 3);
         height: 200px;
-        margin-right: 10px;
+        object-fit: cover; 
     }
 }
+
+p.user-card-bio{
+    font-weight: 600;
+}
+
