@@ -1,12 +1,25 @@
-.navbar-lewagon {
-  justify-content: space-between;
-  background: white;
+
+.nav{
+  padding: 10px;
+  height: 15vh;
+  background-image: asset-url('nav-pic.gif');
+  background-size: cover;
 }
 
-.navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
+.nav-logo-img{
+  height: 100%;
+  width: 150px;
+  background-image: asset-url('logo.png');
+  background-size: contain ;
+  background-repeat: no-repeat;
 }
-
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
+.navbar-home {
+  position: absolute;
+  width: 100%;
+  background: transparent;
+  box-shadow: none;
+  .navbar-wagon-link {
+    color: white;
+    font-weight: bold;
+  }
 }
