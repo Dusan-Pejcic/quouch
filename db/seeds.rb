@@ -14,7 +14,8 @@ User.create!( name: 'Doraa',
   username: 'doraa',
   bio: 'Professional zombie practitioner. Freelance internet trailblazer. Friend of animals everywhere.',
   email: 'dora12443@yahoo.fr',
-  password: 123456
+  password: 123456,
+  profile_picture_url: 'https://randomuser.me/api/portraits/women/6.jpg'
 )
 
 User.create!( name: 'Matz',
@@ -23,7 +24,8 @@ User.create!( name: 'Matz',
   username: 'coco',
   bio: 'Music practitioner. Hardcore travel aficionado. Proud beer geek. Bacon trailblazer.',
   email: 'maramedy4444@yahoo.fr',
-  password: 123456
+  password: 123456,
+  profile_picture_url: 'https://randomuser.me/api/portraits/men/31.jpg'
 )
 User.create!( name: 'Dora',
   address: 'Derfflingerstraße 7, 10785 Berlin',
@@ -31,7 +33,8 @@ User.create!( name: 'Dora',
   username: 'dora',
   bio: 'Zombie geek. Award-winning travel enthusiast. Freelance twitter maven. Unapologetic organizer',
   email: 'dora4444@yahoo.fr',
-  password: 123456
+  password: 123456,
+  profile_picture_url: 'https://randomuser.me/api/portraits/women/7.jpg'
 )
 User.create!( name: 'Sylvie',
   address: 'Stephanstraße 49, 10559 Berlin',
@@ -39,7 +42,8 @@ User.create!( name: 'Sylvie',
   username: 'sylvie',
   bio: 'Web junkie. Analyst. Hardcore introvert. Social media aficionado. Certified explorer.',
   email: 'sylvie4444@yahoo.fr',
-  password: 123456
+  password: 123456,
+  profile_picture_url: 'https://randomuser.me/api/portraits/women/36.jpg'
 )
 
 User.create!( name: 'Luisa',
@@ -48,7 +52,8 @@ User.create!( name: 'Luisa',
   username: 'Lou',
   bio: 'Evil travel junkie. Passionate coffee ninja. Falls down a lot. Professional alcohol practitioner.',
   email: 'Luisa@yahoo.fr',
-  password: 123456
+  password: 123456,
+  profile_picture_url: 'https://randomuser.me/api/portraits/women/47.jpg'
 )
 
 User.create!( name: 'Cathy',
@@ -57,7 +62,8 @@ User.create!( name: 'Cathy',
   username: 'cathe',
   bio: 'Typical zombie enthusiast. Travel junkie. Coffee fan. Incurable tv advocate. Twitter maven. Music fanatic. Web guru.',
   email: 'cathy4444@yahoo.fr',
-  password: 123456
+  password: 123456,
+  profile_picture_url: 'https://randomuser.me/api/portraits/women/50.jpg'
 )
 
 User.create!( name: 'Nadine',
@@ -66,7 +72,8 @@ User.create!( name: 'Nadine',
   username: 'nadine',
   bio: 'Wannabe twitter aficionado. Zombie lover. Evil creator. Thinker. Entrepreneur.',
   email: 'nadine44444@yahoo.fr',
-  password: 123456
+  password: 123456,
+  profile_picture_url: 'https://randomuser.me/api/portraits/women/9.jpg'
 )
 
 User.create!( name: 'Medy',
@@ -75,7 +82,8 @@ User.create!( name: 'Medy',
   username: 'meddd',
   bio: 'Tv fanatic. Evil pop cultureaholic. Internet evangelist. Passionate music trailblazer. Zombie fanatic.',
   email: 'med3333@yahoo.fr',
-  password: 123456
+  password: 123456,
+  profile_picture_url: 'https://randomuser.me/api/portraits/men/75.jpg'
 )
 
 User.create!( name: 'Conor',
@@ -84,7 +92,8 @@ User.create!( name: 'Conor',
   username: 'conor',
   bio: 'Total pop culture scholar. Amateur tv lover. Professional food expert. Troublemaker.',
   email: 'conor3333@yahoo.fr',
-  password: 123456
+  password: 123456,
+  profile_picture_url: 'https://randomuser.me/api/portraits/men/63.jpg'
 )
 
 User.create!( name: 'Leonie',
@@ -93,16 +102,18 @@ User.create!( name: 'Leonie',
   username: 'leonie',
   bio: 'Lifelong web lover. Introvert. Extreme coffee guru. Friendly social media nerd. Tv enthusiast. Award-winning pop culture scholar.',
   email: 'leonie33333@yahoo.fr',
-  password: 123456
+  password: 123456,
+  profile_picture_url: 'https://randomuser.me/api/portraits/women/30.jpg'
 )
 
-User.create!( name: 'Nora Von ',
+User.create!( name: 'Nora',
   address: 'Karl-Marx-Straße 159, 12043 Berlin',
   city: 'Berlin',
   username: 'noraaa',
   bio: 'Hipster-friendly beer aficionado. Music guru. Avid zombie maven. Explorer. Proud twitter expert. Social media practitioner.',
   email: 'noraaa33333@yahoo.fr',
-  password: 123456
+  password: 123456,
+  profile_picture_url: 'https://randomuser.me/api/portraits/women/41.jpg'
 )
 
 User.create!( name: 'Uwe',
@@ -111,7 +122,8 @@ User.create!( name: 'Uwe',
   username: 'uwe',
   bio: 'Evil beer scholar. Devoted twitter nerd. Hardcore bacon practitioner. General tvaholic',
   email: 'medffffff@yahoo.fr',
-  password: 123456
+  password: 123456,
+  profile_picture_url: 'https://randomuser.me/api/portraits/men/44.jpg'
 )
 
 
@@ -121,7 +133,8 @@ User.create!( name: 'Milena',
   username: 'milena',
   bio: 'Award-winning bacon lover. Creator. Beer practitioner. Subtly charming explorer. Future teen idol.',
   email: '7hmaio@coincun.com',
-  password: 123456
+  password: 123456,
+  profile_picture_url: 'https://randomuser.me/api/portraits/women/55.jpg'
 )
 
 User.create!( name: 'Sabrina',
@@ -130,17 +143,19 @@ User.create!( name: 'Sabrina',
   username: 'sabsab',
   bio: 'Avid music enthusiast. Certified pop culture advocate. Tv maven. Award-winning foodaholic.',
   email: 'sugaraddict@googlemail.com',
-  password: 123456
+  password: 123456,
+  profile_picture_url: 'https://randomuser.me/api/portraits/women/77.jpg'
 )
 
 
-User.create!( name: 'Cat',
+User.create!( name: 'Max',
   address: 'Mommsenstraße 32, 10629 Berlin',
   city: 'Berlin',
   username: 'meowmeow',
   bio: 'Devoted tvaholic. Total travel expert. Passionate music maven. General web aficionado.',
   email: 'ilikeeatingcupcakes@googlemail.com',
-  password: 123456
+  password: 123456,
+  profile_picture_url: 'https://randomuser.me/api/portraits/men/67.jpg'
 )
 
 
@@ -151,7 +166,8 @@ User.create!( name: 'Marie',
   username: 'marie',
   bio: 'Music junkie. Hipster-friendly problem solver. Organizer. Devoted student. Travel trailblazer. Pop culture advocate. Beeraholic.',
   email: 'whatisthis@googlemail.com',
-  password: 123456
+  password: 123456,
+  profile_picture_url: 'https://randomuser.me/api/portraits/women/2.jpg'
 )
 
 
@@ -161,7 +177,8 @@ User.create!( name: 'Mimi',
   username: 'mim666',
   bio: 'Total social media junkie. Lifelong web scholar. Zombie enthusiast. General bacon fanatic. Tv trailblazer. Music guru.',
   email: 'anotheremailaddress@googlemail.com',
-  password: 123456
+  password: 123456,
+  profile_picture_url: 'https://randomuser.me/api/portraits/women/84.jpg'
 )
 
 
@@ -171,16 +188,18 @@ User.create!( name: 'Tamara',
   username: 'monamo',
   bio: 'Thinker. Alcohol aficionado. Food guru. Prone to fits of apathy. Tv fan. Amateur music expert. Internet advocate.',
   email: 'mygreatemail@googlemail.com',
-  password: 123456
+  password: 123456,
+  profile_picture_url: 'https://randomuser.me/api/portraits/women/83.jpg'
 )
 
 
 User.create!( name: 'Claire',
   address: 'Brandenburgische Str. 21, 10707 Berlin',
   city: 'Berlin',
-  username: 'claire',
+  username: 'BooClaire',
   bio: 'Internet nerd. Friendly communicator. Coffee evangelist. Infuriatingly humble music specialist. Amateur tv advocate.',
   email: 'whatever@googlemail.com',
-  password: 123456
+  password: 123456,
+  profile_picture_url: 'https://randomuser.me/api/portraits/women/52.jpg'
 )
 
