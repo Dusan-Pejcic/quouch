@@ -1,25 +1,51 @@
 .banner {
   height: 100vh;
   background-image: asset-url('sun.jpg');
-  display: flex;
-  justify-content: space-around;
-  align-items: top;
+  // display: flex;
+  // justify-content: space-around;
+  // align-items: top;
   background-size: cover;
   background-position: center;
-  padding: 150px 0;
+  padding: 0 0 150px 0;
 }
 
-.banner-content {
-  // padding-bottom: 50vh;
-  // padding-right: 50vh;
-  display: flex;
+.flex-wrapper{
+  display:flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: end;
+  h1{
+    display: inline-block;
+  }
+  p{
+    display: inline-block;
+  }
 }
+
+.fun {
+  display: flex;
+  justify-content: flex-end;
+ }
+
+.flex-wrapper {
+  margin: 10%;
+  margin-left: 70%;
+}
+.banner-content {
+  padding-bottom: 50%;
+  // padding-right: 50vh;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: center;
+
+}
+
+// .banner-header {
+//   justify-content: end;
+// }
 
 .banner h1 {
   margin: 0;
-  color: white;
+  color: black;
   text-shadow: 2px 2px 6px rgba(0,0,0,0.2);
   font-size: 80px;
   font-weight: lighter;
@@ -35,7 +61,7 @@
 
 .banner p {
   font-size: 20px;
-  color: white;
+  color: black;
   opacity: .7;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
 }
