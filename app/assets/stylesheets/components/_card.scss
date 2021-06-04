@@ -5,11 +5,12 @@
     box-shadow: 0 0 15px rgba(0,0,0,0.2);
     display: flex;
     align-items: center;
+    justify-content: center;
      #button {
      padding-right: 35px;
      padding-top: 10px;
    }
-    align-items: center;
+
     padding: 14px;
     margin: 14px;
   }
@@ -22,7 +23,7 @@
   }
 
   .card-product h2 {
-    text-align: left;
+    text-align: center;
     font-size: 28px;
     font-weight: bold;
     margin: 0;
@@ -51,4 +52,16 @@
 
  .container {
   padding-top: 30px;
+ }
+
+ .usernameheader {
+
+ }
+ 
+ .usernamesmall {
+
+ }
+
+ #flex-container {
+   margin-left: 300px;
  }
