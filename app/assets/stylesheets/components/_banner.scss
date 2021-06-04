@@ -89,3 +89,14 @@
   opacity: .7;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
 }
+
+
+.banner-three {
+  height: 100vh;
+  background-image: asset-url('minimal.jpg');
+  // display: flex;
+  // justify-content: space-around;
+  // align-items: top;
+  background-size: cover;
+  background-position: center;
+}
