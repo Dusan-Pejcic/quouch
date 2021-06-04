@@ -3,7 +3,9 @@
 <div class="flex-container">
     <% @users.each do |user| %>
         <div class="card-product">
+        <div id="profilephoto">
           <img src="<%= user.profile_picture_url %>">
+          </div>
             <h2><%= user.name %></h2>
             <p><%= user.bio %></p>
         <%#=user.name %>  <%= link_to user.username , user_path(user) %><br>
