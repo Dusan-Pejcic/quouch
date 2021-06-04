@@ -5,7 +5,9 @@ Rails.application.routes.draw do
   get "users/confirmation", to: 'availabilities#confirmation_page', as: :confirmation_page
   patch "users/:id/availabilities/confirmation", to: 'availabilities#confirmation', as: :confirmation
   resources :users, only: [ :index, :show]
-  resources :chatrooms, only: :show
+  resources :chatrooms, only: :show do
+    resources :messages, only: :create
+  end
 
 
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
