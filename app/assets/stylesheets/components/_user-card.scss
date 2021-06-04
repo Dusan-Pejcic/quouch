@@ -1,9 +1,14 @@
 .user-card{
     display: flex;
     width: 100%;
+    
 }
 .img-contianer{
-  flex: 1  
+  flex: 1; 
+  img{
+    height: 70%;
+    border-radius: 50%;
+} 
 }
 .text-contianer{
     flex: 1;
@@ -17,7 +22,8 @@
     display: flex;
     margin-top: 50px;
     img{
-        width: 30%;
+        width: calc(100% / 3);
+        height: 200px;
         margin-right: 10px;
     }
 }

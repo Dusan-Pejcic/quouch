@@ -1,26 +1,23 @@
 <div class="container">
-<%= link_to "Back", :back %>
 
-<div class="img-text-wrap user-card">
-    <div class="img-contianer">
-    <img src="<%= @user.profile_picture_url %>" alt="">
+    <%= link_to "<- Back", :back %>
+    <div class="row d-flex mt-5">
+        <div class="img-contianer col-md-3 ">
+            <img src="<%= @user.profile_picture_url %>" alt="">
+                    <p class='user-card-bio'><%= @user.bio %></p>
+
+        </div>
+        <div class="text-container col-md-7 ">
+            <h1><%= @user.name %></h1>
+            <p class='user-card-description'><%= @user.description %></p>
+            <button type="button" class="btn btn-info ml-auto">Contact <%= @user.name %></button>
+
+        </div>
+
+        <div class="couch-img-container">
+            <img src="https://i.redd.it/7jvnrhhnfws41.jpg" alt="" class="couch-img">
+            <img src="https://i.redd.it/7jvnrhhnfws41.jpg" alt="" class="couch-img">
+            <img src="https://i.redd.it/7jvnrhhnfws41.jpg" alt="" class="couch-img">
+        </div>
     </div>
-    <div class="text-container">
-    <h1><%= @user.name %></h1>
-    <p class='user-card-bio'><%= @user.bio %></p>
-    <p class='user-card-description'><%= @user.description %></p>
-    </div>
-</div>
-
-
-
-<div class="couch-img-container">
-<img src="https://i.redd.it/7jvnrhhnfws41.jpg" alt="" class="couch-img">
-<img src="https://i.redd.it/7jvnrhhnfws41.jpg" alt="" class="couch-img">
-<img src="https://i.redd.it/7jvnrhhnfws41.jpg" alt="" class="couch-img">
-
-</div>
-<%# <%= link_to 'see all profiles', result_page_path, class: 'btn btn-flat' %>
- 
-
 </div>
