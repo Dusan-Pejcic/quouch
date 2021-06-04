@@ -1,5 +1,17 @@
-<h3>Hosts In This Area</h3>
+<h3>No more overnight stays with horny single men</h3>
 
+<div class="flex-container">
     <% @users.each do |user| %>
+        <div class="card-product">
+          <img src="<%= user.img_url %>">
+            <h2><%= user.name %></h2>
+            <p><%= user.bio %></p>
         <%#=user.name %>  <%= link_to user.username , user_path(user) %><br>
+           <div id="button">
+    <%= link_to 'Meet me', user_path(user), class: "btn btn-flat" %>
+           </div>
+        </div>
     <% end %>
+</div>
+
+
