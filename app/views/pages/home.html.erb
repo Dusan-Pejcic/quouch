@@ -1,17 +1,22 @@
 <div class="banner">
-<div class = "banner-content">
-  <h1>quouch</h1>
-    <p>Couchsurfing from a female and queer perspective</p>
-<%= form_tag(users_path, :method => "get",
-    class: 'navbar-form navbar-left' ) do %>
-  <div class="input-group" style="border-radius: 100vh">
-    <%= search_field_tag :search, params[:search], placeholder: "Where do you want to go?", class: "form-control search-bar" %>
-    <div class="input-group-btn">
-      <%= button_tag "Search", :class => 'btn btn-info glyphicon glyphicon-search',:name => nil%>
+  <div class="container">
+    <div class="fun">
+      <div class="flex-wrapper">
+          <h1>quouch</h1>
+          <p>Couchsurfing from a female & queer perspective</p>
+      </div>
     </div>
-  </div>
-<% end %>
-
+      <div class = "banner-content">
+        <%= form_tag(users_path, :method => "get",
+          class: 'navbar-form navbar-left' ) do %>
+        <div class="input-group" style="border-radius: 100vh">
+          <%= search_field_tag :search, params[:search], placeholder: "Where do you want to go?", class: "form-control" %>
+          <div class="input-group-btn">
+            <%= button_tag "Search", :class => 'btn btn-info glyphicon glyphicon-search',:name => nil%>
+          </div>
+        </div>
+      <% end %>
+    </div>
   </div>
 </div>
 
