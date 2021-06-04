@@ -1,4 +1,4 @@
-<div class="banner-three">
+ <div class="banner-three">
 <div class="flex-container">
  <div id="title">
   <h3>Hosts In Berlin</h3>
@@ -9,7 +9,7 @@
           <img src="<%= user.profile_picture_url %>">
           </div>
           <div class="card-product-infos">
-            <h2><%link_to user.username , user_path(user) %></h2> 
+            <h2><%= link_to user.username , user_path(user) %></h2> 
             <p><%= user.bio %></p>
         </div>
            <div id="button">
@@ -19,6 +19,5 @@
     <% end %>
     </div>
 </div>
-
-
+</div>
 
