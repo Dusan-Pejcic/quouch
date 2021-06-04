@@ -1,6 +1,6 @@
 <div class="flex-container">
  <div id="title">
-  <h3>Hosts In This Area</h3>
+  <h3>Hosts In Berlin</h3>
  </div>
     <% @users.each do |user| %>
         <div class="card-product">
@@ -8,7 +8,7 @@
           <img src="<%= user.profile_picture_url %>">
           </div>
           <div class="card-product-infos">
-            <h2><%= link_to user.username , user_path(user) %></h2> 
+            <h2><%link_to user.username , user_path(user) %></h2> 
             <p><%= user.bio %></p>
         </div>
            <div id="button">

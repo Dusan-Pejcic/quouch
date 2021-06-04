@@ -24,6 +24,11 @@
   margin: 14px;
 }
 
+.card-product:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+
 .card-product img {
   height: 80%;
   width: 120px;
@@ -40,12 +45,13 @@
 }
 
 .card-product p {
-  text-align: center;
+  text-align: left;
   font-size: 14px;
   line-height: 1.4;
   opacity: .8;
   margin-bottom: 0;
   margin-top: 8px;
+  padding-left: 10px;
 }
 
 .h3 {
@@ -58,5 +64,5 @@
 }
 
 .body {
-  background-color: blanchedalmond;
+  background-color: white;
 }
