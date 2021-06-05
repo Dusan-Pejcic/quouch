@@ -29,8 +29,6 @@ ActiveRecord::Schema.define(version: 2021_06_05_001003) do
     t.string "name"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.string "user_one"
-    t.string "user_two"
     t.bigint "user_one_id"
     t.bigint "user_two_id"
     t.index ["user_one_id"], name: "index_chatrooms_on_user_one_id"
