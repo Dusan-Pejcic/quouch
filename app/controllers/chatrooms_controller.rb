@@ -1,5 +1,7 @@
 class ChatroomsController < ApplicationController
-   # skip_after_action :verify_authorized, only: [ :show ]
+    def index
+        @chatrooms = policy_scope(Chatroom).where(user_one: current_user).or(policy_scope(Chatroom).where(user_two: current_user))
+    end
 
     def show
         @chatroom = Chatroom.find(params[:id])
