@@ -26,12 +26,12 @@
             <p class="card-text">
             <h3>A Quick Introduction </h3>
             <%= @user.bio %></p>
-            <a href="#" class="btn btn-primary">Book A Room</a>
+            <a href="#" class="btn primary-button">Book A Room</a>
          </div>
          <div class="reviewcard">
-            <p>User Reviews </p>
-              <a href="#" class="btn btn-primary">Add A Review</a>
-
+            <div>
+              <%= link_to "Add A Review", new_user_review_path(@user), class:"btn secondary-button" %>
+            </div>
          </div>
       </div>
    </div>
@@ -52,12 +52,6 @@
   </div>
   <% end %>
 
-
-
-
-  <div>
-    <%= link_to "Add Review", new_user_review_path(@user) %>
-  </div>
  <hr>
 </div>
 
