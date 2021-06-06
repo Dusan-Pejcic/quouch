@@ -23,11 +23,12 @@
             </a>
          </div>
          <div class="card-body">
-            <p class="card-text">
             <h3>A Quick Introduction </h3>
+            <p class="card-text">
             <%= @user.bio %></p>
-            <a href="#" class="btn primary-button">Talk To Me</a>
+
          </div>
+            <%= link_to "Talk To Me", { :controller => "chatrooms", :action => "start_chat", user: @user}, class: "btn primary-button" %>
          <div class="reviewcard">
             <div>
               <%= link_to "Add A Review", new_user_review_path(@user), class:"btn secondary-button" %>
