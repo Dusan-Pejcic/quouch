@@ -1,10 +1,15 @@
-<div class="message-container" id="message-<%= message.id %>">
+<div class="message-container <%= message.user.id == current_user.id ? 'message-left' : 'message-right' %>" id="message-<%= message.id %>">
     <i class="author">
     <%# raise %>
-        <img src="<%= message.user.profile_picture_url %>" alt="">
-        
-      <span><%= message.user.username %></span>
-      <small><%= message.created_at.strftime("%a %b %e at %l:%M%p") %></small>
+      <img src="/assets/<%= message.user.profile_picture_url %>" alt="" class = "">
+      <div class="username-time-container">
+      <div class="time-date">
+      <small ><%= message.created_at.strftime("%a %b %e at %l:%M%p") %></small>
+      </div>
+      </div>  
     </i>
+    <div class="message-content">
+    
     <p><%= message.content %></p>
+    </div>
 </div>

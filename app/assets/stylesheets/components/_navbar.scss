@@ -14,7 +14,7 @@
 //   background-repeat: no-repeat;
 // }
 .navbar-home {
-  position: absolute;
+  position: fixed;
   top: 0;
   width: 100%;
   box-shadow: none;
@@ -29,6 +29,8 @@
   background: none;
   position: fixed;
   width: 100%;
+  background-color: white;
+
 }
 
 .navbar-lewagon .navbar-collapse {
