@@ -1,7 +1,7 @@
 <div class="message-container <%= message.user.id == current_user.id ? 'message-left' : 'message-right' %>" id="message-<%= message.id %>">
     <i class="author">
     <%# raise %>
-      <img src="/assets/<%= message.user.profile_picture_url %>" alt="" class = "">
+      <img src="<%= message.user.profile_picture_url %>" alt="" class = "">
       <div class="username-time-container">
       <div class="time-date">
       <small ><%= message.created_at.strftime("%a %b %e at %l:%M%p") %></small>
