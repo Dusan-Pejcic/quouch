@@ -182,7 +182,7 @@ User.create!( name: 'Dusan',
   bio: 'Evil beer scholar. Devoted twitter nerd. Hardcore bacon practitioner. General tvaholic',
   email: 'medffffff@yahoo.fr',
   password: 123456,
-  profile_picture_url: 'DusanPejcic',
+  profile_picture_url: 'DusanPejcic.png',
   description: 'I‘m definitely a social guy, flourishing with good company. Trust and social bonds are the only assets I invest into.
   Studying Physics and philosophy in Heidelberg. Beside from that there is barely a theme i can’t get excited about.
   I will have an opinion towards a lot of themes(I don’t guarantee that its always a good one:D), so challenge me for a discussion;).'
