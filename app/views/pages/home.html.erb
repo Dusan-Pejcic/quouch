@@ -1,24 +1,15 @@
 <<<<<<< HEAD
 <div class="bg-img">
-<% @nav %>
+<%= content_for(:navbar_class, "navbar-home") %>
   
   <h1>QUOUCH</h1>
   <p>No more overnight stays with single men. </p>
   <div class ="searchbar">
    <%= form_tag(users_path, :method => "get", class: 'navbar-form navbar-left' ) do %>
-      <div class="searchbar">
-        <input class="search_input" type="text" name="" placeholder="Search...">
-        <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
-=======
-
-<%= content_for(:navbar_class, "navbar-home") %>
-<div class="banner">
-  <div class="container">
-    <div class="fun">
-      <div class="flex-wrapper">
-          <h1>quouch</h1>
-          <p>Couchsurfing from a female & queer perspective</p>
->>>>>>> 56e1611a9271d02bece63db2eb6fa4e7b9ffa520
+     <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
+    aria-describedby="search-addon" />
+  <button type="button" class="btn btn-outline-primary">search</button>
+        </div>
       </div>
     <% end %>
   </div>
