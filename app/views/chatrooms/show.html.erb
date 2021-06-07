@@ -4,28 +4,27 @@
 
 <div class="chat-container">
 
-<div class="chatroom-header">
-  <div class="user-header <%= @chatroom.user_one_id == current_user.id ? 'user-left' : 'user-right' %>">
-    <img src="/assets/<%= @chatroom.user_one.profile_picture_url %>" alt="" class = "">
-    <h3><%= @chatroom.user_one.name %></h3>
+  <div class="chatroom-header">
+    <div class="user-header <%= @chatroom.user_one_id == current_user.id ? 'user-left' : 'user-right' %>">
+      <img src="/assets/<%= @chatroom.user_one.profile_picture_url %>" alt="" class = "">
+      <h3><%= @chatroom.user_one.name %></h3>
+    </div>
+    <div class="user-header <%= @chatroom.user_two_id == current_user.id ? 'user-left' : 'user-right' %>">
+      <img src="/assets/<%= @chatroom.user_two.profile_picture_url %>" alt="" class = "">
+      <h3><%= @chatroom.user_two.name %></h3>
+    </div>
   </div>
-  <div class="user-header <%= @chatroom.user_two_id == current_user.id ? 'user-left' : 'user-right' %>">
-    <img src="/assets/<%= @chatroom.user_two.profile_picture_url %>" alt="" class = "">
-    <h3><%= @chatroom.user_two.name %></h3>
+
+  <div id="messages" data-chatroom-id="<%= @chatroom.id %>">
+    <% @chatroom.messages.each do |message| %>
+      <%= render 'messages/message', message: message %>
+    <% end %>
   </div>
 </div>
 
-<div id="messages" data-chatroom-id="<%= @chatroom.id %>">
-  <% @chatroom.messages.each do |message| %>
-    <%= render 'messages/message', message: message %>
-  <% end %>
-</div>
-
-<div class="message-container">
-  <%= simple_form_for [ @chatroom, @message ], remote: true do |f| %>
-    <%= f.input :content, label: false, placeholder: "Your message" %>
-    <%= f.submit class: 'primary-button'%>
-  <% end %>
-</div>
-
-</div>
+  <div class="message-container">
+    <%= simple_form_for [ @chatroom, @message ], remote: true do |f| %>
+      <%= f.input :content, label: false, placeholder: "Your message" %>
+      <%= f.button :submit, 'Send', class: 'primary-button'%>
+    <% end %>
+  </div>
