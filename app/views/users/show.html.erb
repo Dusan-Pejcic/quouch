@@ -2,7 +2,7 @@
   <%= link_to "Back", :back %>
 
   <div class="img-text-wrap user-card">
-    <div class="img-contianer">
+    <div class="img-container">
       <img src="<%= @user.profile_picture_url %>" alt="">
     </div>
     <div class="text-container">
@@ -18,9 +18,19 @@
     <img src="https://i.redd.it/7jvnrhhnfws41.jpg" alt="" class="couch-img">
     <img src="https://i.redd.it/7jvnrhhnfws41.jpg" alt="" class="couch-img">
     <img src="https://i.redd.it/7jvnrhhnfws41.jpg" alt="" class="couch-img">
-
   </div>
   <%# <%= link_to 'see all profiles', result_page_path, class: 'btn btn-flat' %>
 
+  <% @user.reviews_as_reviewee.each do |review| %>
+  <h2>What other Quouchers have to say about <%= @user.name%></h2>
+  <hr>
 
+  <div class="review-container">
+    <p><%= review.content %></p>
+    <%= review.rating %></br>
+    <%= review.reviewer_id %></br>
+    <i><small> <%= time_ago_in_words(review.created_at)%> ago</i></small>
+    <% end %>
+  </div>
+  <hr>
 </div>
