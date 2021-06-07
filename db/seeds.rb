@@ -5,6 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+Review.destroy_all
 User.destroy_all
 
 
@@ -277,7 +278,7 @@ User.create!( name: 'Tamara',
 )
 
 
-User.create!( name: 'Claire',
+claire = User.new( name: 'Claire',
   address: 'Brandenburgische Str. 21, 10707 Berlin',
   city: 'Berlin',
   username: 'BooClaire',
@@ -292,4 +293,7 @@ User.create!( name: 'Claire',
   I am curious on life and people. I think that mutual intellectual exchange enriches the personality.
   my philosophy; live today, helping people, internationalism, cultural exchange, intellectual growth, optimism.'
 )
+claire.save!
+Review.create!(:content => "she is really nice person", :rating => 5, :reviewer => User.first , :reviewee => User.last)
 
+puts "created Review"

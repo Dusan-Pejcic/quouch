@@ -7,6 +7,7 @@
  </div>
     <% @users.each do |user| %>
         <div class="card-product">
+            <h2><%= user.name %></h2>
         <div id="profilephoto">
           <img src="<%= user.profile_picture_url %>">
           </div>
