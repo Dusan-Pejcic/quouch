@@ -1,28 +1,17 @@
-
+<<<<<<< HEAD
+<div class="bg-img">
 <%= content_for(:navbar_class, "navbar-home") %>
-<div class="banner">
-  <div class="container">
-    <div class="fun">
-      <div class="flex-wrapper">
-          <h1>quouch</h1>
-          <p>Couchsurfing from a female & queer perspective</p>
-      </div>
-    </div>
-      <div class = "banner-content">
-        <%= form_tag(users_path, :method => "get",
-          class: 'navbar-form navbar-left' ) do %>
-        <div class="input-group" style="border-radius: 100vh">
-          <%= search_field_tag :search, params[:search], placeholder: "Where do you want to go?", class: "form-control" %>
-          <div class="input-group-btn">
-            <%= button_tag "Search", :class => 'btn btn-info glyphicon glyphicon-search',:name => nil%>
-          </div>
+  
+  <h1>QUOUCH</h1>
+  <p>No more overnight stays with single men. </p>
+  <div class ="searchbar">
+   <%= form_tag(users_path, :method => "get", class: 'navbar-form navbar-left' ) do %>
+     <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
+    aria-describedby="search-addon" />
+  <button type="button" class="btn btn-outline-primary">search</button>
         </div>
-      <% end %>
-    </div>
+      </div>
+    <% end %>
   </div>
+
 </div>
-
-
-
-
-
