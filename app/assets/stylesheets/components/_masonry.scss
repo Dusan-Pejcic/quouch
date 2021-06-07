@@ -1,0 +1,69 @@
+// .users {
+//   column-count: 3;
+//   column-gap: 1em;
+// }
+.grid {
+  left: 20px;
+}
+.grid-item { width: 100px; }
+
+ @for $i from 1 through 100 {
+    .grid-item:nth-child(#{$i}) img {
+      $h: (random(100) + 100) + px;
+      height: $h;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+//   .item { /* Masonry bricks or child elements */
+//   background-color: #white;
+//   display: inline-block;
+//   margin: 0 0 1em;
+//   width: 100%;
+// }
+
+// /* Box-sizing reset: //w3bits.com/?p=3225 */
+// html {
+//   box-sizing: border-box;
+// }
+
+// *,
+// *:before,
+// *:after {
+//   box-sizing: inherit;
+// }
+
+// /* The Masonry Container */
+// .masonry {
+//   margin: 1.5em auto;
+//   max-width: 768px;
+//   column-gap: 1.5em;
+// }
+
+// /* The Masonry Brick */
+// .item {
+//   background: #fff;
+//   padding: 1em;
+//   margin: 0 0 1.5em;
+// }
+
+// /* Masonry on large screens */
+
+//   .masonry {
+//     column-count: 4;
+//   }
+
+
+// /* Masonry on medium-sized screens */
+//   .masonry {
+//     column-count: 3;
+//   }
+
+
+// /* Masonry on small screens */
+//   .masonry {
+//     column-count: 2;
+//   }
+
+

@@ -4,11 +4,12 @@
   flex-direction: column;
   align-items: center;
 }
-  
-  
+
+
 
 .card-product {
   overflow: hidden;
+  overflow: ellipsis;
   height: 120px;
   width: 60%;
   background: white;
@@ -20,7 +21,7 @@
    padding-right: 25px;
    padding-top: 10px;
  }
-  align-items: center; 
+  align-items: center;
   padding: 14px;
   margin: 14px;
 }
