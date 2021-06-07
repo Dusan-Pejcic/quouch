@@ -1,3 +1,6 @@
+import consumer from "./consumer";
+
+
 const insertIntoDOM = (messageHTML, currentUserId, messages) => {
     // create an empty div
     const message = document.createElement('div') // https://developer.mozilla.org/pt-BR/docs/Web/API/Document/createElement
@@ -16,7 +19,7 @@ const insertIntoDOM = (messageHTML, currentUserId, messages) => {
   
     // insert the element in the DOM
     messages.insertAdjacentElement('beforeend', message);
-
+};
     const initChatroom = () => {
         // find my messages DOM element
         const messages = document.getElementById('messages');
@@ -27,7 +30,7 @@ const insertIntoDOM = (messageHTML, currentUserId, messages) => {
           const currentUserId = messages.dataset.currentUserId;
       
           // create the subscription
-          consumer.subscriptions.create(
+            consumer.subscriptions.create(
             { channel: 'ChatroomChannel', id: chatroomId },
             {
               // when you receive something
@@ -37,8 +40,11 @@ const insertIntoDOM = (messageHTML, currentUserId, messages) => {
                 insertIntoDOM(messageHTML, currentUserId, messages);
               }
             }
-          )
+            )
         }
       };
+    
+
+
       // export the function
       export { initChatroom }
