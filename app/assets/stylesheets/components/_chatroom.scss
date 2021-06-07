@@ -8,8 +8,9 @@
 .chatroom-header{
     display: flex;
     justify-content: space-between;
-    padding-top: 60px;
-    margin-bottom: 40px;
+    padding-bottom: 15px;
+    
+    border-bottom: 1px solid #cecdcd;
 .time-date{
     margin: 0px 10px;
   
@@ -39,6 +40,9 @@
             order:2;
         }
     }
+}
+#messages{
+    margin-top: 40px;
 }
 
 /* mesage_________________________ */
@@ -83,10 +87,9 @@
     margin-bottom: 10px;
 }
 /* _______________________________chat form */
-.message-container{
-    padding: 20px;
+.message-form-container{
     position: sticky;
-    bottom: 100px;
+    bottom: 80px;
 }
 
 /* ___________________ chatrooms index */

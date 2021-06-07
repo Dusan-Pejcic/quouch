@@ -1,6 +1,6 @@
 <h1><%= @chatroom.name %></h1>
 <%# raise %>
-<%= link_to 'go back', :back, class: 'go-back-link' %>
+
 
 <div class="chat-container">
 
@@ -14,6 +14,8 @@
       <h3><%= @chatroom.user_two.name %></h3>
     </div>
   </div>
+    <%= link_to 'go back', :back, class: 'go-back-link' %>
+
 
   <div id="messages" data-chatroom-id="<%= @chatroom.id %>">
     <% @chatroom.messages.each do |message| %>
@@ -22,7 +24,7 @@
   </div>
 </div>
 
-  <div class="message-container">
+  <div class="message-form-container">
     <%= simple_form_for [ @chatroom, @message ], remote: true do |f| %>
       <%= f.input :content, label: false, placeholder: "Your message" %>
       <%= f.button :submit, 'Send', class: 'primary-button'%>
