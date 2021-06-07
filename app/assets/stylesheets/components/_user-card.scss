@@ -1,23 +1,30 @@
 .user-card{
     display: flex;
     width: 100%;
+    
 }
 .img-contianer{
-  flex: 1  
+  flex: 1; 
+  .profile-picture{
+    height: 70%;
+    border-radius: 50%;
+} 
 }
 .text-contianer{
     flex: 1;
 }
 
-/* .couch-img{
-    width: calc(100% / 3);
-} */
-
 .couch-img-container{
     display: flex;
     margin-top: 50px;
     img{
-        width: 30%;
-        margin-right: 10px;
+        width: calc(100% / 3);
+        height: 200px;
+        object-fit: cover; 
     }
 }
+
+p.user-card-bio{
+    font-weight: 600;
+}
+

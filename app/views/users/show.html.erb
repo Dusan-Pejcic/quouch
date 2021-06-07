@@ -1,36 +1,97 @@
 <div class="container">
-  <%= link_to "Back", :back %>
+  <%= link_to "<- Back", :back %>
 
-  <div class="img-text-wrap user-card">
-    <div class="img-container">
-      <img src="<%= @user.profile_picture_url %>" alt="">
+    <div class="row d-flex mt-5">
+        <div class="img-contianer col-md-4 ">
+            <img class="profile-picture mb-4" src="<%= @user.profile_picture_url %>" alt="">
+
+            <div class="name-and-availability-container d-flex">
+                <h1><%= @user.name %></h1>
+  
+                    <ul class="availability-list">
+                        <li class="availability-item">offering a couch</li>
+                        <li class="availability-item">up for hanging out</li>
+                    </ul>
+            </div>
+                    
+
+        </div>
+        <div class="text-container col-md-8 mb-5">
+            <p class='user-card-bio'><%= @user.bio %></p>
+            <p class='user-card-description'><%= @user.description %></p>
+<%#             <%= link_to "Contact", confirmation_path :class => "btn btn-info ml-auto"%>
+           <%= link_to "Contact me", { :controller => "chatrooms", :action => "start_chat", user: @user}, class: "btn btn-info ml-auto" %>
+
+<%#             <button type="button" class="btn btn-info ml-auto">Contact <%= @user.name %></button>
+ 
+        </div>
+
+        <div class="couch-img-container">
+            <img src="https://i.redd.it/7jvnrhhnfws41.jpg" alt="" class="couch-img">
+            <img src="https://i.pinimg.com/originals/b6/86/fb/b686fb4de1b9639b0507c5a2163a9f8f.jpg" alt="" class="couch-img">
+            <img src="https://myanimals.com/wp-content/uploads/2018/01/dog-on-sofa.jpg" alt="" class="couch-img">
+        </div>
     </div>
-    <div class="text-container">
-      <h1><%= @user.name %></h1>
-      <p class='user-card-bio'><%= @user.bio %></p>
-      <p class='user-card-description'><%= @user.description %></p>
+<%# <div class="carousel-container">
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div id="couch-carousel" class="carousel-inner">
+        <div class="carousel-item couch-carousel-item active">
+        <img class="d-block w-100" src="https://i.redd.it/7jvnrhhnfws41.jpg" alt="First slide">
+        </div>
+        <div class="carousel-item couch-carousel-item">
+        <img class="d-block w-100" src="https://i.pinimg.com/originals/b6/86/fb/b686fb4de1b9639b0507c5a2163a9f8f.jpg" alt="Second slide">
+        </div>
+        <div class="carousel-item couch-carousel-item">
+        <img class="d-block w-100" src="https://myanimals.com/wp-content/uploads/2018/01/dog-on-sofa.jpg" alt="Third slide">
+        </div>
     </div>
-  </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+    </div>
 
+</div> %>
 
+    <h3 class="mt-5">What other Quouchers have to say about <%= @user.name %></h3>
+    <div class="review-card">
+        <img src="https://randomuser.me/api/portraits/men/44.jpg" alt="">
+        <div class="review-card-text-container p-5">
+            <blockquote class="blockquote mb-0">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+            <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+            </blockquote>
+        </div>
+    </div>
 
-  <div class="couch-img-container">
-    <img src="https://i.redd.it/7jvnrhhnfws41.jpg" alt="" class="couch-img">
-    <img src="https://i.redd.it/7jvnrhhnfws41.jpg" alt="" class="couch-img">
-    <img src="https://i.redd.it/7jvnrhhnfws41.jpg" alt="" class="couch-img">
-  </div>
-  <%# <%= link_to 'see all profiles', result_page_path, class: 'btn btn-flat' %>
+    <div class="review-card">
+        <img src="https://randomuser.me/api/portraits/women/92.jpg" alt="">
+        <div class="review-card-text-container p-5">
+            <blockquote class="blockquote mb-0">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+            <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+            </blockquote>
+        </div>
+    </div>
 
-  <% @user.reviews_as_reviewee.each do |review| %>
-  <h2>What other Quouchers have to say about <%= @user.name%></h2>
-  <hr>
+    <div class="review-card">
+        <img src="https://randomuser.me/api/portraits/women/67.jpg" alt="">
+        <div class="review-card-text-container p-5">
+            <blockquote class="blockquote mb-0">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+            <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+            </blockquote>
+        </div>
+    </div>
 
-  <div class="review-container">
-    <p><%= review.content %></p>
-    <%= review.rating %></br>
-    <%= review.reviewer_id %></br>
-    <i><small> <%= time_ago_in_words(review.created_at)%> ago</i></small>
-    <% end %>
-  </div>
-  <hr>
 </div>
