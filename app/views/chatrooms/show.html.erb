@@ -16,10 +16,15 @@
   </div>
     <%= link_to 'go back', :back, class: 'go-back-link' %>
 
-
-  <div id="messages" data-chatroom-id="<%= @chatroom.id %>">
+  <div id="messages" data-chatroom-id="<%= @chatroom.id %>" data-current-user-id="<%= current_user.id %>">
     <% @chatroom.messages.each do |message| %>
-      <%= render 'messages/message', message: message %>
+
+        <% if message.user_id == current_user.id %>
+          <%= render 'messages/message', message: message, css_class: 'sent-message' %>
+        <% else %>
+          <%= render 'messages/message', message: message, css_class: 'received-message' %>
+        <% end %>
+    
     <% end %>
   </div>
 </div>

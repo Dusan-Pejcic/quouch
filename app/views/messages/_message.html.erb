@@ -1,4 +1,4 @@
-<div class="message-container <%= message.user.id == current_user.id ? 'message-left' : 'message-right' %>" id="message-<%= message.id %>">
+<div class="message-container <%= local_assigns[:css_class] %>" id="message-<%= message.id %>" data-sender-id="<%= message.user.id %>">
     <i class="author">
     <%# raise %>
        <%= image_tag message.user.profile_picture_url, alt: "", class: ""%>   
