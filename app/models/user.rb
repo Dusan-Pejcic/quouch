@@ -8,5 +8,8 @@ class User < ApplicationRecord
   has_many :reviews_as_reviewee, class_name: "Review", foreign_key: :reviewee_id
   has_many :availabilities
   has_many :messages
+  has_many :chatrooms_one, class_name: "Chatroom", foreign_key: :user_one_id
+  has_many :chatrooms_two, class_name: "Chatroom", foreign_key: :user_two_id
+  
 
 end
