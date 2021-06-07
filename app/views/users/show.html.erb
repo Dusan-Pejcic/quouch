@@ -32,7 +32,7 @@
          </div>
          <div class="button-container">
          
-         <%= link_to "Talk To Me", { :controller => "chatrooms", :action => "start_chat", user: @user}, class: "btn primary-button btn-sm" %>
+            <%= link_to "Talk To Me", { :controller => "chatrooms", :action => "start_chat", user: @user}, class: "btn primary-button btn-sm" %>
          </div>
          <div class="reviewcard">
           
@@ -47,7 +47,6 @@
 <div class="reviews">
 <% @reviews.each do |review| %>
 <div class="review-card">
-   <%= image_tag review.reviewer.profile_picture_url.nil? ? 'https://randomuser.me/api/portraits/women/6.jpg' : review.reviewer.profile_picture_url %>
    <blockquote class="blockquote mb-0">
      <div class="stars">
       <p><%= '⭐️' * review.rating   %></div>
