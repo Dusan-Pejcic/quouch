@@ -8,4 +8,8 @@ class ChatroomPolicy < ApplicationPolicy
   def show?
     true
   end
+
+  def start_chat?
+    true
+  end
 end
