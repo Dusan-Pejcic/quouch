@@ -5,11 +5,17 @@
   align-items: center;
 }
 
+.container h1 {
+  color: black;
+}
+
+.container {
+  background-color: #FB8B24;
+}
 
 
 .card-product {
   overflow: hidden;
-  overflow: ellipsis;
   height: 120px;
   width: 60%;
   background: white;
@@ -24,6 +30,16 @@
   align-items: center;
   padding: 14px;
   margin: 14px;
+}
+
+.card-product-infos h2 {
+ color: black;
+  }
+.card-product-infos p {
+  color: black;
+  }
+.card-product-infos {
+  border: 12px;
 }
 
 .card-product:hover {

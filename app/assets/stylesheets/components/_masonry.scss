@@ -2,10 +2,10 @@
 //   column-count: 3;
 //   column-gap: 1em;
 // }
-.grid {
-  left: 20px;
-}
-.grid-item { width: 100px; }
+// .grid {
+//   left: 20px;
+// }
+.grid-item { width: 50%; }
 
  @for $i from 1 through 100 {
     .grid-item:nth-child(#{$i}) img {
@@ -14,6 +14,10 @@
       width: 100%;
       object-fit: cover;
     }
+  }
+
+  .grid {
+    border: 12px;
   }
 
 //   .item { /* Masonry bricks or child elements */

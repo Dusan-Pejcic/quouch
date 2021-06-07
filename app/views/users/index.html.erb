@@ -1,18 +1,15 @@
-<h1>No more overnight stays with horny single men</h1>
-  <div class="container">
+<div class="container">
+  <h1>No more overnight stays with horny single men</h1>
     <div class="grid">
+      <div class="container masonry">
       <% @users.each do |user| %>
         <div class="grid-item">
            <img src="<%= user.profile_picture_url %>">
-          <div class="card-product-infos">
+           <div class="card-product-infos">
             <h2><%= link_to user.username , user_path(user) %></h2>
-            <p><%= user.bio %></p>
+            <p><%= truncate(user.bio, length: 40) %></p>
         </div>
-           <div id="button">
-    <%= link_to 'Meet me', user_path(user), class: "btn btn-info" %>
-           </div>
         </div>
-      </div>
       <% end %>
     </div>
  </div>
