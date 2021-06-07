@@ -5,15 +5,18 @@
     <span aria-hidden="true">&times;</span>
   </button>
 </div> -->
+    <h1>Quouchers from <%= params[:search].capitalize %></h1>
       <div class="masonry">
       <% @users.each do |user| %>
+           <%= link_to user_path(user) do  %>
         <div class="grid-item">
            <%= image_tag user.profile_picture_url, alt: "alttext", class: "grid-item-picture"%>
            <div class="grid-item-infos">
-            <span class="grid-item-title"><%= link_to user.name , user_path(user) %></span>
+            <p class="grid-item-title"><%= user.name %></p>
             <p class="grid-item-bio"><%= truncate(user.bio, length: 40) %></p>
+          </div>
         </div>
-        </div>
+        <% end %>
       <% end %>
     </div>
 </div>
