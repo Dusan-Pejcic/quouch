@@ -271,7 +271,7 @@ User.create!( name: 'Lisa-Marie',
   bio: 'Alcohol aficionado. Food guru. Prone to fits of apathy. Tv fan. Amateur music expert. Internet advocate.',
   email: 'mygreatemail@googlemail.com',
   password: 123456,
-  profile_picture_url: 'Lisa-MarieMaaß.png',
+  profile_picture_url: 'Lisa-Marie.png',
   description: "I am curious on life and people. I think that mutual intellectual exchange enriches the personality.
   my philosophy; live today, helping people, internationalism, cultural exchange, intellectual growth, optimism.
   I'm an open minded simple guy who study Computervisulistik and Design, who loves to travel, meet new people, from different backgrounds and cultures. Always up for a laugh and a drink whether on a park, a rooftop or on the beach, just where it feels right!"
@@ -292,4 +292,6 @@ User.create!( name: 'Claire',
   I am curious on life and people. I think that mutual intellectual exchange enriches the personality.
   my philosophy; live today, helping people, internationalism, cultural exchange, intellectual growth, optimism.'
 )
+
+
 
