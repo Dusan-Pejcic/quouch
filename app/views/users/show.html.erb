@@ -1,43 +1,12 @@
 <div class="flex-grid">
-   <div class="col">
-      <div id="header">
-         <%= link_to "<- Back", :back %>
-      </div>
-   </div>
-   <div class="col">
-      <div class="card">
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="<%=@user.profile_picture_url %>" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="<%=@user.profile_picture_url %>" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="<%=@user.profile_picture_url %>" class="d-block w-100" alt="...">
-    </div>
+   <div class="card" style="width: 18rem;">
+   <div class="photo">
+     <%=@user.profile_picture_url %>
+     </div>
+   <div class="card-body">
+    <h5 class="card-title"><%= link_to "#{@user.username}" , user_path(@user) %></h5>
+    <p class="card-text"><%= @user.bio %></p>
+    <a href="#" class="btn btn-primary">Book A Room</a>
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
 </div>
-         
-      </div>
-   </div>
-   <div class="col">
-      <div id ="user-card">
-         <p><%= @user.bio %></p>
-      </div>
-   </div>
-   <div class="col">
-      <div class="footer">
-         <button type="button" class="btn btn-primary btn-lg btn-block">Contact Host</button>
-      </div>
-   </div>
 </div>
