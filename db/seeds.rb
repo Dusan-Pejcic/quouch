@@ -278,7 +278,7 @@ User.create!( name: 'Tamara',
 )
 
 
-claire = User.new( name: 'Claire',
+User.create!( name: 'Claire',
   address: 'Brandenburgische Str. 21, 10707 Berlin',
   city: 'Berlin',
   username: 'BooClaire',
@@ -293,7 +293,4 @@ claire = User.new( name: 'Claire',
   I am curious on life and people. I think that mutual intellectual exchange enriches the personality.
   my philosophy; live today, helping people, internationalism, cultural exchange, intellectual growth, optimism.'
 )
-claire.save!
-Review.create!(:content => "she is really nice person", :rating => 5, :reviewer => User.first , :reviewee => User.last)
 
-puts "created Review"
