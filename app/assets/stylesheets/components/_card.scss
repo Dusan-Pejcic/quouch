@@ -9,10 +9,6 @@
   color: black;
 }
 
-.container {
-  background-color: #FB8B24;
-}
-
 
 .card-product {
   overflow: hidden;
@@ -22,6 +18,7 @@
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   display: flex;
   align-items: center;
+
    #button {
    padding-left:10px;
    padding-right: 25px;
@@ -32,14 +29,31 @@
   margin: 14px;
 }
 
+// .grid-items {
+//   border: solid;
+// }
+
 .card-product-infos h2 {
  color: black;
+ margin-bottom: 0;
+ line-height: 1;
   }
 .card-product-infos p {
   color: black;
+  font-size: 13px;
+  padding-bottom: 8px;
   }
 .card-product-infos {
   border: 12px;
+  padding-left: 8px;
+  background:white;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.card-product-infos a {
+  color: #9A031E;
+  font-size: 17px;
 }
 
 .card-product:hover {

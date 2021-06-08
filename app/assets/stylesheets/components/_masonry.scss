@@ -5,7 +5,10 @@
 // .grid {
 //   left: 20px;
 // }
-.grid-item { width: 50%; }
+.grid-item {
+  width: 50%;
+  padding: 4px;
+}
 
  @for $i from 1 through 100 {
     .grid-item:nth-child(#{$i}) img {
@@ -13,6 +16,13 @@
       height: $h;
       width: 100%;
       object-fit: cover;
+      padding: 4px;
+      background-color: white;
+      border-radius: 8px;
+    }
+    img {
+      border-radius: 8px;
+      margin-bottom: -8px;
     }
   }
 

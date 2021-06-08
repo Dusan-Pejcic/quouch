@@ -4,7 +4,7 @@ const masonryTiles = () => {
   var msnry = new Masonry( elem, {
     // options
     itemSelector: '.grid-item',
-    //columnWidth: 200
+    columnWidth: 200
   });
 }
 
