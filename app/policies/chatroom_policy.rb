@@ -5,6 +5,7 @@ class ChatroomPolicy < ApplicationPolicy
     end
   end
 
+
   def show?
     true
   end
