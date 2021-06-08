@@ -11,12 +11,10 @@
 
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
   </head>
-
-  <body>
-      <%= render 'shared/navbar'%>
-
-    <%= render 'shared/flashes' %>
-
-    <%= yield %>
-  </body>
+    <body>
+      <%= render 'shared/navbar' if current_user %>
+      <%= render 'shared/flashes' %>
+      <%= yield %>
+      <script src="/path/to/masonry.pkgd.min.js"></script>
+    </body>
 </html>

@@ -1,12 +1,12 @@
-.review-card{
-    height: 200px;
-    display: flex;
-    align-items: center;
-    border-bottom: 1px solid #D3D3D3;
-    img{
-        height: 100px;
-        width: 100px;
-        border-radius: 50%;
-        object-fit: cover; 
-    }
+i.review-card{
+  height: 200px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #D3D3D3;
+  img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
 }

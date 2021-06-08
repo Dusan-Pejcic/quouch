@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_06_04_110022) do
+ActiveRecord::Schema.define(version: 2021_06_08_114153) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -29,6 +29,10 @@ ActiveRecord::Schema.define(version: 2021_06_04_110022) do
     t.string "name"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.bigint "user_one_id"
+    t.bigint "user_two_id"
+    t.index ["user_one_id"], name: "index_chatrooms_on_user_one_id"
+    t.index ["user_two_id"], name: "index_chatrooms_on_user_two_id"
   end
 
   create_table "messages", force: :cascade do |t|
@@ -48,6 +52,7 @@ ActiveRecord::Schema.define(version: 2021_06_04_110022) do
     t.bigint "reviewee_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.integer "user_id"
     t.index ["reviewee_id"], name: "index_reviews_on_reviewee_id"
     t.index ["reviewer_id"], name: "index_reviews_on_reviewer_id"
   end
@@ -72,6 +77,8 @@ ActiveRecord::Schema.define(version: 2021_06_04_110022) do
   end
 
   add_foreign_key "availabilities", "users"
+  add_foreign_key "chatrooms", "users", column: "user_one_id"
+  add_foreign_key "chatrooms", "users", column: "user_two_id"
   add_foreign_key "messages", "chatrooms"
   add_foreign_key "messages", "users"
   add_foreign_key "reviews", "users", column: "reviewee_id"

@@ -5,7 +5,12 @@ class ChatroomPolicy < ApplicationPolicy
     end
   end
 
+
   def show?
+    true
+  end
+
+  def start_chat?
     true
   end
 end

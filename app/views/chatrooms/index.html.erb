@@ -1,0 +1,15 @@
+<ul>
+<% @chatrooms.each do |chatroom| %>
+<li>
+    <div>
+        <p><%= chatroom.user_one.username %></p>
+        <p><%= chatroom.user_two.username %></p>
+        <img src="<%= chatroom.user_one.profile_picture_url %>" alt="">
+        <img src="<%= chatroom.user_two.profile_picture_url  %>" alt="">
+        <%= link_to "go to messages ", chatroom_path(chatroom) %>
+    </div></li>
+<%=  %>
+<% end %>
+</ul>
+
+<%= link_to 'back', :back %>
