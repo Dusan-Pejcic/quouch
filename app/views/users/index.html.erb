@@ -1,17 +1,17 @@
-<<<<<<< HEAD
 <div class="container">
   <h1>No more overnight stays with horny single men</h1>
     <div class="grid">
       <div class="container masonry">
       <% @users.each do |user| %>
         <div class="grid-item">
-           <img src="/assets/profiles/<%= user.profile_picture_url %>">
+           <img src="/assets/<%= user.profile_picture_url %>">
            <div class="card-product-infos">
             <h2><%= link_to user.name , user_path(user) %></h2>
             <p><%= truncate(user.bio, length: 40) %></p>
-          </div>
+        </div>
         </div>
       <% end %>
     </div>
-  </div>
+ </div>
+</div>
 </div>
