@@ -1,26 +1,17 @@
- <div class="banner-three">
-<div class="flex-container">
- <div id="title">
-
-  <h3>No more overnight stays with horny single men</h3>
-
- </div>
-    <% @users.each do |user| %>
-        <div class="card-product">
-            <h2><%= user.name %></h2>
-        <div id="profilephoto">
-          <img src="<%= user.profile_picture_url %>">
+<<<<<<< HEAD
+<div class="container">
+  <h1>No more overnight stays with horny single men</h1>
+    <div class="grid">
+      <div class="container masonry">
+      <% @users.each do |user| %>
+        <div class="grid-item">
+           <img src="/assets/profiles/<%= user.profile_picture_url %>">
+           <div class="card-product-infos">
+            <h2><%= link_to user.name , user_path(user) %></h2>
+            <p><%= truncate(user.bio, length: 40) %></p>
           </div>
-          <div class="card-product-infos">
-            <h2><%= link_to user.username , user_path(user) %></h2>
-            <p><%= user.bio %></p>
         </div>
-           <div id="button">
-    <%= link_to 'Meet me', user_path(user), class: "btn btn-info" %>
-           </div>
-        </div>
-    <% end %>
+      <% end %>
     </div>
+  </div>
 </div>
-</div>
-
