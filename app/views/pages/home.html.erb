@@ -1,17 +1,22 @@
 <div class="bg-img">
-<%= content_for(:navbar_class, "navbar-home") %>
+  <%= content_for(:navbar_class, "navbar-home") %>
 
-  <h1>QUOUCH</h1>
-  <p>Couchsurfing from a female & queer perspective </p>
-  <div class = "container">
-  <div class ="searchbar">
-   <%= form_tag(users_path, :method => "get", class: 'navbar-form navbar-left' ) do %>
-     <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
-    aria-describedby="search-addon" />
-  <button type="button" class="btn btn-outline-primary w-100">search</button>
-        </div>
-      </div>
-    <% end %>
-  </div>
+  <div class = "container homepagebox">
+   <h1>Quouch</h1>
+   <p>Couchsurfing from a female & queer perspective </p>
+   <div class ="searchbar">
+      <%= form_tag(users_path, :method => "get", class: 'navbar-form navbar-left' ) do %>
+      <!-- <p>What's your next destination?</p> -->
+      <p>No more overnight stays with horny single men</p>
+        <input type="search" class="form-control" placeholder="Berlin" aria-label="Search"
+        aria-describedby="search-addon" />
+        <button type="button" class="btn primary-button w-100"><i class="fas fa-search"></i> Search</button>
+      <% end %>
+   </div>
   </div>
 </div>
+
+
+
+
+
