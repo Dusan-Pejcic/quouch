@@ -4,7 +4,7 @@
       <div class="container masonry">
       <% @users.each do |user| %>
         <div class="grid-item">
-           <img src="/assets/<%= user.profile_picture_url %>">
+           <%= image_tag user.profile_picture_url, alt: "alttext" %>
            <div class="card-product-infos">
             <h2><%= link_to user.name , user_path(user) %></h2>
             <p><%= truncate(user.bio, length: 40) %></p>
