@@ -13,3 +13,16 @@
 @import "pages/index";
 
 
+/* global styles ----------------------------- */
+
+h1{
+    color: white;
+    }
+
+h2, h3{
+    color: $accent_color;
+}
+
+a{
+    color: $link-color;
+}
