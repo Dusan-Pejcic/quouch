@@ -3,14 +3,15 @@
 
   <h1>QUOUCH</h1>
   <p>Couchsurfing from a female & queer perspective </p>
+  <div class = "container">
   <div class ="searchbar">
    <%= form_tag(users_path, :method => "get", class: 'navbar-form navbar-left' ) do %>
      <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
     aria-describedby="search-addon" />
-  <button type="button" class="btn btn-outline-primary">search</button>
+  <button type="button" class="btn btn-outline-primary w-100">search</button>
         </div>
       </div>
     <% end %>
   </div>
-
+  </div>
 </div>
