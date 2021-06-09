@@ -1,7 +1,12 @@
-<div class="container">
-  <%= simple_form_for([@user, @review]) do |f| %>
-  <%= f.input :rating %>
-  <%= f.input :content %>
-  <%= f.button :submit %>
-  <% end %>
+<div class="container-fluid">
+  <div class="row justify-content-center">
+    <div class="col-4">
+      <%= simple_form_for([@user, @review]) do |f| %>
+      <%= f.input :rating %>
+      <%= f.input :content %>
+      <%= f.submit "Create Review", class: 'btn primary-button'%>
+      <% end %>
+    </div>
+  </div>
 </div>
+
