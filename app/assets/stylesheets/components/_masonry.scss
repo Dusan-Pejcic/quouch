@@ -1,12 +1,12 @@
-// .users {
-//   column-count: 3;
-//   column-gap: 1em;
-// }
+  .masonry {
+  column-count: 2;
+  column-gap: 4px;
+}
 // .grid {
 //   left: 20px;
 // }
 .grid-item {
-  width: 50%;
+  width: 100%;
   padding: 4px;
   background-color: white;
   border-radius-bottom-right: 8px;
