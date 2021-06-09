@@ -8,7 +8,7 @@
       <div class="masonry">
       <% @users.each do |user| %>
         <div class="grid-item">
-           <%= image_tag user.profile_picture_url, alt: "alttext", class: "grid-item-picture" %>
+           <%= image_tag user.profile_picture_url, alt: "alttext", class: "grid-item-picture"%>
            <div class="grid-item-infos">
             <span class="grid-item-title"><%= link_to user.name , user_path(user) %></span>
             <p class="grid-item-bio"><%= truncate(user.bio, length: 40) %></p>
@@ -17,4 +17,4 @@
       <% end %>
     </div>
 </div>
-</div>
+
