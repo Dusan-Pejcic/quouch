@@ -1,5 +1,4 @@
 .flex-grid {
-  padding-top: 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -52,4 +51,7 @@
   background-color: #de8209;
   opacity: 0.6;
   padding-left: 2em;
+}
+.button-container{
+  padding: 0 20px;
 }
