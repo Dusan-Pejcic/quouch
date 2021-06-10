@@ -5,7 +5,7 @@
     <span aria-hidden="true">&times;</span>
   </button>
 </div> -->
-    <h1>Quouchers from <%= params[:search].capitalize %></h1>
+  <div class="quouchers"><h3>Quouchers from <%= params[:search].capitalize %></h3></div>
       <div class="masonry">
       <% @users.each do |user| %>
            <%= link_to user_path(user) do  %>
