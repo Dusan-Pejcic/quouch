@@ -27,20 +27,20 @@ User.create!( name: 'Christina',
   my philosophy; live today, helping people, internationalism, cultural exchange, intellectual growth, optimism.'
 )
 
-User.create!( name: 'Bruno',
-  address: 'Meraner Str. 33, 10825 Berlin',
-  city: 'Berlin',
-  username: 'coco',
-  bio: 'All about bacon. Hardcore travel aficionado. Proud beer geek. Bacon trailblazer.',
-  email: 'maramedy4444@yahoo.fr',
-  password: 123456,
-  profile_picture_url: 'BrunoKreidler.png',
-  description: 'I‘m definitely a social guy, flourishing with good company. Trust and social bonds are the only assets I invest into.
-  Studying Physics and philosophy in Heidelberg. Beside from that there is barely a theme i can’t get excited about.
-  I will have an opinion towards a lot of themes(I don’t guarantee that its always a good one:D), so challenge me for a discussion;).'
-)
+# User.create!( name: 'Bruno',
+#   address: 'Meraner Str. 33, 10825 Berlin',
+#   city: 'Berlin',
+#   username: 'coco',
+#   bio: 'All about bacon. Hardcore travel aficionado. Proud beer geek. Bacon trailblazer.',
+#   email: 'maramedy4444@yahoo.fr',
+#   password: 123456,
+#   profile_picture_url: 'BrunoKreidler.png',
+#   description: 'I‘m definitely a social guy, flourishing with good company. Trust and social bonds are the only assets I invest into.
+#   Studying Physics and philosophy in Heidelberg. Beside from that there is barely a theme i can’t get excited about.
+#   I will have an opinion towards a lot of themes(I don’t guarantee that its always a good one:D), so challenge me for a discussion;).'
+# )
 
-User.create!( name: 'HannahBanana',
+User.create!( name: 'Hannah',
   address: 'Derfflingerstraße 7, 10785 Berlin',
   city: 'köln',
   username: 'dora',
@@ -116,7 +116,7 @@ User.create!( name: 'Mais',
   my philosophy; live today, helping people, internationalism, cultural exchange, intellectual growth, optimism.'
 )
 
-User.create!( name: 'Charles',
+User.create!( name: 'Marie',
   address: 'Max-Beer-Straße, 10119 Berlin',
   city: 'Berlin',
   username: 'meddd',
@@ -124,7 +124,7 @@ User.create!( name: 'Charles',
   email: 'med3333@yahoo.fr',
   password: 123456,
   profile_picture_url: 'CharlesOuverleaux.png',
-  description: 'I‘m definitely a social guy, flourishing with good company. Trust and social bonds are the only assets I invest into.
+  description: 'I‘m definitely a social girl, flourishing with good company. Trust and social bonds are the only assets I invest into.
   Studying Physics and philosophy in Heidelberg. Beside from that there is barely a theme i can’t get excited about.
   I will have an opinion towards a lot of themes(I don’t guarantee that its always a good one:D), so challenge me for a discussion;).'
 )
@@ -161,7 +161,7 @@ User.create!( name: 'Christian',
   my philosophy; live today, helping people, internationalism, cultural exchange, intellectual growth, optimism.'
 )
 
-User.create!( name: 'Nora',
+User.create!( name: 'Sabine',
   address: 'Karl-Marx-Straße 159, 12043 Berlin',
   city: 'Berlin',
   username: 'noraaa',
@@ -189,7 +189,7 @@ User.create!( name: 'Dusan',
 )
 
 
-User.create!( name: 'Erik',
+User.create!( name: 'Nathalie',
   address: 'Wiener Straße 28, 10999 Berlin',
   city: 'Berlin',
   username: 'milena',

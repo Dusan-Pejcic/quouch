@@ -1,7 +1,8 @@
   .masonry {
   column-count: 2;
   grid-gap: 16px;
-  margin-top: 50px;
+  margin-top: 25px;
+  break-inside: avoid-column;
 }
 // .grid {
 //   left: 20px;
@@ -15,19 +16,23 @@
   margin-bottom: 16px;
   border-radius: 8px;
   overflow:hidden;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
+  display: block;
+  break-inside: avoid-column;
   &:after {
     content: "";
     position:absolute;
     width: 100%;
-    height: 40%;
+    height: 60%;
     bottom: 0;
     left: 0;
     background: rgb(0,0,0);
-background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%);
+background: linear-gradient(0deg, rgba(0,0,0,1) 30%, rgba(255,255,255,0) 100%);
 z-index: 1;
   }
+}
+
+.grid-user {
+  display: block;
 }
 
 .grid-item-picture {
@@ -52,11 +57,12 @@ z-index: 1;
   // font-weight: 600;
   // margin-bottom: 0;
 
-    font-size: 21px;
+    font-size: 18px;
   color: white;
-  font-weight: 600;
+  font-weight: bolder;
   margin-bottom: 0;
   text-align: center;
+  font-family: 'Source Sans Pro', sans-serif;
 
 }
 
