@@ -4,7 +4,7 @@
   align-items: center;
   text-align: center;
   height: 100%;
-  width: 100%; 
+  width: 100%;
   text-align: left;
 }
 
@@ -26,9 +26,8 @@
   color:white;
 }
 
-
 .card-body p {
-  color: grey;
+  color: black;
   font-size: 1em;
 }
 
@@ -39,8 +38,10 @@
 }
 
 .card-body h5 {
-  font-size: 0.9em;
-
+  font-size: 1.2em;
+  font-weight: bolder;
+  padding-top: 5px;
+  padding-bottom: 10px;
 }
 
 .btn-primary {
@@ -54,4 +55,6 @@
 }
 .button-container{
   padding: 0 20px;
+  font-weight: bolder;
+  font-family: 'Source Sans Pro', sans-serif;
 }
