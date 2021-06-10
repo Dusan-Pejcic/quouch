@@ -1,15 +1,16 @@
-<ul>
-<% @chatrooms.each do |chatroom| %>
-<li>
-    <div>
-        <p><%= chatroom.user_one.username %></p>
-        <p><%= chatroom.user_two.username %></p>
-        <img src="<%= chatroom.user_one.profile_picture_url %>" alt="" class = "<%= current_user ? 'left' : 'right' %>">
-        <img src="<%= chatroom.user_two.profile_picture_url  %>" alt="" class = "<%= current_user ? 'left' : 'right' %>">
-        <%= link_to "go to messages ", chatroom_path(chatroom) %>
-    </div></li>
-<%=  %>
-<% end %>
-</ul>
+<div class="chatroom-container">
+    <ul class='chatrooms-index-card-ul'>
+        <%= link_to 'go back', :back %>
+        <p class='chatrooms-header'>Messages From:</p>
+        <% @chatrooms.each do |chatroom| %>
+            <li>
+                <div class='chatrooms-index-card'>
+                    <img src="/assets/<%= chatroom.user_one.id == current_user.id ? chatroom.user_two.profile_picture_url : chatroom.user_one.profile_picture_url %>" alt="">
+                    <h3 class='chatrooms-index-card-name'><%= chatroom.user_one.id == current_user.id ? chatroom.user_two.name : chatroom.user_one.name %></h3>
+                    <%= link_to "go to messages ", chatroom_path(chatroom), class: 'chatrooms-index-card-link' %>
+                </div>
+            </li>
+        <% end %>
+    </ul>
 
-<%= link_to 'back', :back %>
+</div>

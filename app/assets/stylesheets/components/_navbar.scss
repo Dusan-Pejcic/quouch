@@ -14,8 +14,6 @@
 //   background-repeat: no-repeat;
 // }
 .navbar-home {
-  position: fixed;
-  top: 0;
   width: 100%;
   box-shadow: none;
   .navbar-wagon-link {
@@ -25,11 +23,20 @@
 }
 
 .navbar-lewagon {
+  display:flex;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 100;
   justify-content: space-between;
   background: none;
-  position: fixed;
   width: 100%;
-  background-color: white;
+  background-color: #E36413;
+  padding: 18px;
+  .fas {
+  color: white;
+  position: top;
+}
 
 }
 
@@ -40,3 +47,8 @@
 .navbar-lewagon .navbar-brand img {
   width: 40px;
 }
+
+.nav-item {
+  color:white;
+}
+
