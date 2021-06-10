@@ -1,5 +1,5 @@
 .bg-img {
-  height: 100vh;
+  height: calc(100vh - 10vh);
   background-image: asset-url('jenga.jpg');
   // background-repeat: no-repeat;
   // background-attachment: fixed;
@@ -18,11 +18,11 @@
 }
 
 .homepagebox h1 {
-  font-size: 60px;
+  font-size: 40px;
   color: white;
   padding-top: 16px;
   text-shadow: white;
-
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .homepagebox p {
@@ -49,11 +49,11 @@
 
 .searchbar p {
   font-size: 12px;
-  padding-bottom: 0;
+  padding-top: 9px;
 }
 
 .homepagebox {
-  height: 50vh;
+  height: 45%;
   // background-color: #FB8B24;
   // display: flex;
   // justify-content: bottom;
@@ -73,11 +73,14 @@
   }
   .btn {
     z-index: 100;
+    height: 55px;
   }
 }
-.quouchers h3 {
-  height: 50px;
-  width: 100%;
-  background-color: #FB8B24;
+.quouchers p {
+  color: #9A031E;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 900;
+  font-size: large;
+  padding-top: 16px;
 }
 
