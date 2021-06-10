@@ -20,7 +20,8 @@ const initMapbox = () => {
         mapboxgl.accessToken = mapElement.dataset.mapboxApiKey;
         const map = new mapboxgl.Map({
             container: 'map',
-            style: 'mapbox://styles/dusan-p/ckp6wiixh015x18mlkhkht0w0'
+            style: 'mapbox://styles/mapbox/streets-v11', // style URL
+
         });
         map.resize();
 

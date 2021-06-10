@@ -5,9 +5,13 @@
   align-items: center;
   text-align: center;
   height: 100%;
-  width: 100%;  
+  width: 100%; 
+  text-align: left;
 }
 
+.upperbar {
+  padding-left: 0.8em;
+}
 
 .carousel-item img {
   width: 100%;
@@ -24,3 +28,28 @@
 }
 
 
+.card-body p {
+  color: grey;
+  font-size: 1em;
+}
+
+.reviews {
+  width: 30em;
+  display: flex;
+  overflow-x: scroll;
+}
+
+.card-body h5 {
+  font-size: 0.9em;
+
+}
+
+.btn-primary {
+  max-width: 75%;
+}
+
+.stars {
+  background-color: #de8209;
+  opacity: 0.6;
+  padding-left: 2em;
+}

@@ -1,12 +1,23 @@
-i.review-card{
-  height: 200px;
-  display: flex;
-  align-items: center;
+.review-card{
   border-bottom: 1px solid #D3D3D3;
-  img{
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-    object-fit: cover;
-  }
+  width: 400px;
+  opacity: 0.5;
+  
+}
+
+.blockquote {
+  border-radius: 0.4em;
+  background: linear-gradient(0deg, rgba(227,100,20,1) 0%, rgba(251,139,36,1) 70%);
+  font-size: 0.7em;
+  margin: 0.4em;
+}
+
+.blockquote p {
+  margin: 0.4em;
+  padding: 0.4em;
+
+}
+
+.mt-5 {
+  font-size: 0.7em;
 }

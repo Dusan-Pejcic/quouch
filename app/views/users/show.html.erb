@@ -4,13 +4,13 @@
          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                <div class="carousel-item active">
-                <%= image_tag @user.profile_picture_url %>
+                  <%= image_tag @user.profile_picture_url %>
                   <div class="centered">
                   </div>
                </div>
                <div class="carousel-item">
                   <div id="map"
-                     style="width: 100%; height: 600px;"
+                     style="width: 100vw; height: 200px;"
                      data-markers="<%= @markers.to_json %>"
                      data-mapbox-api-key="pk.eyJ1IjoiZHVzYW4tcCIsImEiOiJja29lNzRqb3UwMXZhMnFvZzExYXZmYmxyIn0.X80PFeerveeNlOlkLrGWsw"></div>
                </div>
@@ -25,34 +25,37 @@
             </a>
          </div>
          <div class="card-body">
-            <h3>A Quick Introduction </h3>
+            <h5>A Quick Introduction </h5>
             <p class="card-text">
                <%= @user.bio %>
             </p>
          </div>
-         <%= link_to "Talk To Me", { :controller => "chatrooms", :action => "start_chat", user: @user}, class: "btn primary-button" %>
+         <%= link_to "Talk To Me", { :controller => "chatrooms", :action => "start_chat", user: @user}, class: "btn primary-button btn-sm" %>
          <div class="reviewcard">
-            <div>
-               <%= link_to "Add A Review", new_user_review_path(@user), class:"btn secondary-button" %>
-            </div>
+          
+            
          </div>
       </div>
    </div>
 </div>
 </div>
-<h3 class="mt-5">What other Quouchers have to say about <%= @user.name %></h3>
+<div class ="upperbar">
+<h5 class="mt-5">Reviews For <%= @user.name %>      <%= link_to "Add A Review", new_user_review_path(@user) %></h5>
+<div class="reviews">
 <% @reviews.each do |review| %>
 <div class="review-card">
    <%= image_tag review.reviewer.profile_picture_url.nil? ? 'https://randomuser.me/api/portraits/women/6.jpg' : review.reviewer.profile_picture_url %>
    <blockquote class="blockquote mb-0">
+     <div class="stars">
+      <p><%= '⭐️' * review.rating   %></div>
       <p><%= review.content %></p>
-      <p><%= '⭐️' * review.rating   %>
       <p><%= review.reviewer_id %></p>
       </p>
       <footer class="blockquote-footer"><%= review.reviewer.username %></footer>
    </blockquote>
 </div>
-</div>
 <% end %>
+</div>
 <hr>
+
 </div>
