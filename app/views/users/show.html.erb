@@ -21,17 +21,26 @@
             </a>
          </div>
          <div class="card-body">
+<<<<<<< HEAD
          <h5>A Quick Introduction </h5>
+=======
+            <h5> A Quick Introduction to <%= @user.name %></h5>
+>>>>>>> dfd6c719337d91d4d6a02b41f7454be15334b7cd
             <p class="card-text">
                <%= @user.bio %>
             </p>
          </div>
          <div class="button-container">
+<<<<<<< HEAD
          <%= link_to "Talk To Me", { :controller => "chatrooms", :action => "start_chat", user: @user}, class: "btn primary-button btn-sm" %>
+=======
+
+            <%= link_to "Talk To Me", { :controller => "chatrooms", :action => "start_chat", user: @user}, class: "btn primary-button" %>
+>>>>>>> dfd6c719337d91d4d6a02b41f7454be15334b7cd
          </div>
          <div class="reviewcard">
-          
-            
+
+
          </div>
       </div>
 </div>
@@ -42,7 +51,10 @@
 <div class="reviews">
 <% @reviews.each do |review| %>
 <div class="review-card">
+<<<<<<< HEAD
    
+=======
+>>>>>>> dfd6c719337d91d4d6a02b41f7454be15334b7cd
    <blockquote class="blockquote mb-0">
      <div class="stars">
       <p><%= '⭐️' * review.rating   %></div>

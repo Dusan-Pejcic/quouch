@@ -5,7 +5,12 @@
         <% @chatrooms.each do |chatroom| %>
             <li>
                 <div class='chatrooms-index-card'>
-                    <img src="/assets/<%= chatroom.user_one.id == current_user.id ? chatroom.user_two.profile_picture_url : chatroom.user_one.profile_picture_url %>" alt="">
+                
+                <% if chatroom.user_one.id == current_user.id %>
+                    <%= image_tag chatroom.user_two.profile_picture_url, alt: "", class: ""%>
+                    <% else %>
+                    <%= image_tag chatroom.user_one.profile_picture_url, alt: "", class: ""%>   
+                <% end %>   
                     <h3 class='chatrooms-index-card-name'><%= chatroom.user_one.id == current_user.id ? chatroom.user_two.name : chatroom.user_one.name %></h3>
                     <%= link_to "go to messages ", chatroom_path(chatroom), class: 'chatrooms-index-card-link' %>
                 </div>
