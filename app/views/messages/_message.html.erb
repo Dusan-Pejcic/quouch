@@ -1,15 +1,9 @@
 <div class="message-container <%= local_assigns[:css_class] %>" id="message-<%= message.id %>" data-sender-id="<%= message.user.id %>">
-    <i class="author">
-    <%# raise %>
-       <%= image_tag message.user.profile_picture_url, alt: "", class: ""%>   
-      <div class="username-time-container">
+   <%= image_tag message.user.profile_picture_url, alt: "", class: "message-picture"%>
+   <div class="username-time-container">
       <div class="time-date">
-      <small ><%= message.created_at.strftime("%a %b %e at %l:%M%p") %></small>
+         <small ><%= message.created_at.strftime("%a %b %e at %l:%M%p") %></small>
+         <p><%= message.content %></p>
       </div>
-      </div>  
-    </i>
-    <div class="message-content">
-    
-    <p><%= message.content %></p>
-    </div>
+   </div>
 </div>
