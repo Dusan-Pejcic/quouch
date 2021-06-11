@@ -16,6 +16,7 @@
     <body>
       <%= render 'shared/navbar' if current_user && params[:action] != "home"%>
       <%= render 'shared/flashes' %>
-      <%= yield %>
+     <%= yield %>
+
     </body>
 </html>
