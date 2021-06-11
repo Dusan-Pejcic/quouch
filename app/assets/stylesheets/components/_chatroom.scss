@@ -86,11 +86,27 @@ font-size: 20px;
         color: $text-color;
         font-weight: bold;
     }
+    .username-time-container {
+        order: 2;
+    }
+    .message-picture {
+        order: 1;
+    }
 }
 
 .received-message{
     opacity: 1;
-
+    justify-content: flex-end;
+    p {
+        color: $background;
+    font-weight: bold;
+    }
+    .username-time-container {
+        order: 1;
+    }
+    .message-picture {
+        order: 2;
+    }
     .author{
         display: flex;
         justify-content: flex-end;
