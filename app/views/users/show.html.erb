@@ -1,16 +1,12 @@
-<div id="flex-container">
-   <div class="flex-grid">
-      <div class="card">
-         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+<div class="top-card">
+  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                <div class="carousel-item active">
                   <%= image_tag @user.profile_picture_url %>
-                  <div class="centered">
-                  </div>
                </div>
                <div class="carousel-item">
                   <div id="map"
-                     style="width: 100vw; height: 200px;"
+                     style="width: 400px; height: 200px;"
                      data-markers="<%= @markers.to_json %>"
                      data-mapbox-api-key="pk.eyJ1IjoiZHVzYW4tcCIsImEiOiJja29lNzRqb3UwMXZhMnFvZzExYXZmYmxyIn0.X80PFeerveeNlOlkLrGWsw"></div>
                </div>
@@ -25,28 +21,28 @@
             </a>
          </div>
          <div class="card-body">
-            <h5>A Quick Introduction </h5>
+         <h5>A Quick Introduction </h5>
             <p class="card-text">
                <%= @user.bio %>
             </p>
          </div>
          <div class="button-container">
-         
-            <%= link_to "Talk To Me", { :controller => "chatrooms", :action => "start_chat", user: @user}, class: "btn primary-button btn-sm" %>
+         <%= link_to "Talk To Me", { :controller => "chatrooms", :action => "start_chat", user: @user}, class: "btn primary-button btn-sm" %>
          </div>
          <div class="reviewcard">
-          
-            
+
+
          </div>
       </div>
-   </div>
 </div>
-</div>
+         
+
 <div class ="upperbar">
 <h5 class="mt-5">Reviews For <%= @user.name %>      <%= link_to "Add A Review", new_user_review_path(@user) %></h5>
 <div class="reviews">
 <% @reviews.each do |review| %>
 <div class="review-card">
+   
    <blockquote class="blockquote mb-0">
      <div class="stars">
       <p><%= '⭐️' * review.rating   %></div>
