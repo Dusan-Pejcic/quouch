@@ -4,7 +4,9 @@
     padding: 0px 20px;
 
 }
-
+.chatroom-username{
+font-size: 20px;
+}
 .chatroom-header{
     display: flex;
     justify-content: space-between;
@@ -29,10 +31,14 @@
     }
     .user-left{
         order: 1;
+        align-items: center;
+
     }
     .user-right{
         order: 2;
         display: flex;
+        align-items: center;
+
         h3{
             order:1;
         }
@@ -46,10 +52,30 @@
 }
 
 /* mesage_________________________ */
-.message-right{
+.message-container{
+    opacity: 0;
+}
+
+.sent-message{
+    opacity: 1;
+    .author{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    p{
+        color: $text-color;
+        font-weight: bold;
+    }
+}
+
+.received-message{
+    opacity: 1;
+
     .author{
         display: flex;
         justify-content: flex-end;
+        align-items: center;
         img{
             order:2;
         }
@@ -66,23 +92,12 @@
         }
     }
 }
-.message-left{
-    .author{
-        display: flex;
-        justify-content: flex-start;
-    }
-    p{
-        color: $text-color;
-        font-weight: bold;
-    }
-}
 .author{
     img{
         width: 40px;
         height: 40px;
         object-fit: cover;
         border-radius: 50%;
-
     }
     margin-bottom: 10px;
 }
@@ -123,6 +138,5 @@
 .chatrooms-header{
     margin-top: 10vh;
 }
-
 
 

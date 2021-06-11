@@ -25,6 +25,7 @@ import "bootstrap";
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
  import { initChatroomCable } from '../channels/chatroom_channel';
+  import { initChatroom } from '../channels/init_chatroom';
  import { initMapbox } from '../plugins/init_mapbox';
  import { reviewListener } from '../plugins/reviewcard';
 
@@ -32,9 +33,9 @@ import "bootstrap";
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
   // initSelect2();
-  initChatroomCable();
+ // initChatroomCable();
   initMapbox();
-
+  initChatroom();
   reviewListener();
 });
 
