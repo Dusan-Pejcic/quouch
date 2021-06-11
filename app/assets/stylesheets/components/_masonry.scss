@@ -75,13 +75,12 @@ z-index: 1;
 
  @for $i from 1 through 100 {
     .grid-item:nth-child(#{$i}) {
-      $h: (random(100) + 160) + px;
-      height: $h;
+      height: 230px;
       width: 100%;
-      //padding: 4px;
       background-color: white;
       border-radius: 8px;
     }
+
     img {
       border-radius: 8px;
       margin-bottom: -8px;

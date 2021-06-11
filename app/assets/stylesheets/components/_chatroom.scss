@@ -1,22 +1,23 @@
 .chat-container{
     position: relative;
-    height: 100vh;
+    height: 480px;
     padding: 0px 20px;
-
+    overflow-y: scroll;
 }
 .chatroom-username{
 font-size: 20px;
 }
-.chatroom-header{
+.chatroom-header    {
     display: flex;
     justify-content: space-between;
     padding-bottom: 15px;
-
+    margin-top: 12px;
     border-bottom: 1px solid #cecdcd;
-.time-date{
-    margin: 0px 10px;
 
-}
+    .time-date{
+        margin: 0px 10px;
+
+    }
     .user-header{
         display: flex;
         img{
@@ -54,6 +55,24 @@ font-size: 20px;
 /* mesage_________________________ */
 .message-container{
     opacity: 0;
+    display: flex;
+    margin-bottom: 16px;
+
+    .message-picture {
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    small {
+        font-size: 12px;
+    }
+
+    .username-time-container{
+        margin: 0 12px;
+        order:1;
+    }
 }
 
 .sent-message{
@@ -79,9 +98,7 @@ font-size: 20px;
         img{
             order:2;
         }
-        .username-time-container{
-            order:1;
-        }
+
     }
     .message-content{
         display: flex;
@@ -104,8 +121,10 @@ font-size: 20px;
 /* _______________________________chat form */
 .message-form-container{
     position: sticky;
-    bottom: 80px;
+    bottom: 50px;
     padding: 0 20px;
+    background-color: #e8e8e8;
+    padding: 16px;
 }
 
 /* ___________________ chatrooms index */
@@ -114,7 +133,6 @@ font-size: 20px;
     padding: 20px 20px 0 20px;
 }
 .chatrooms-index-card{
-    margin-top: 5vh;
     display: flex;
     align-items: center;
 
@@ -136,7 +154,22 @@ font-size: 20px;
     padding: 0;
 }
 .chatrooms-header{
-    margin-top: 10vh;
+    margin: 16px 0;
+    padding-bottom: 6px;
+    border-bottom: 1px solid grey;
+}
+
+.chat-link {
+    position: relative;
+    width: 100%;
+    padding: 16px;
+    background-color: #f2f2f2;
+    border-radius: 16px;
+    margin-bottom: 16px;
+}
+.chat-card {
+    display: flex;
+    align-items: center;
 }
 
 

@@ -1,22 +1,19 @@
 <h1><%= @chatroom.name %></h1>
-<%# raise %>
-
 
 <div class="chat-container">
+  <%= link_to 'Back', :back, class: 'go-back-link' %>
 
   <div class="chatroom-header">
     <div class="user-header <%= @chatroom.user_one_id == current_user.id ? 'user-left' : 'user-right' %>">
-
-      <%= image_tag @chatroom.user_one.profile_picture_url, alt: "", class: ""%>   
+      <%= image_tag @chatroom.user_one.profile_picture_url, alt: "", class: ""%>
       <h3 class='chatroom-username'><%= @chatroom.user_one.name %></h3>
     </div>
     <div class="user-header <%= @chatroom.user_two_id == current_user.id ? 'user-left' : 'user-right' %>">
       <%= image_tag @chatroom.user_two.profile_picture_url, alt: "", class: ""%>   
       <h3 class='chatroom-username'><%= @chatroom.user_two.name %></h3>
-
     </div>
   </div>
-    <%= link_to 'Back', :back, class: 'go-back-link' %>
+
 
   <div id="messages" data-chatroom-id="<%= @chatroom.id %>" data-current-user-id="<%= current_user.id %>">
     <% @chatroom.messages.each do |message| %>

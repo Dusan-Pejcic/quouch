@@ -1,25 +1,28 @@
 .review-card{
+  position: relative;
+  padding: 12px;
+  margin-right: 16px;
+  width: 310px;
   border-bottom: 1px solid #D3D3D3;
-  width: 400px;
-  opacity: 0.5;
+  border-radius: 6px;
+  background: linear-gradient(0deg, rgba(227,100,20,1) 0%, rgba(251,139,36,1) 70%);
+  overflow: hidden;
 }
 
 .blockquote {
-  border-radius: 0.4em;
-  background: linear-gradient(0deg, rgba(227,100,20,1) 0%, rgba(251,139,36,1) 70%);
+  height: 100%;
   font-size: 0.7em;
-  margin: 0.4em;
-}
 
-.blockquote p {
-  margin: 0.4em;
-  padding: 0.4em;
-  color: white;
-  font-size: 1.4em;
-  font-weight: 0.2;
+  p {
+    margin: 0;
+    color: white;
+    font-size: 16px;
+    font-weight: 600px;
+  }
 
-}
-
-.mt-5 {
-  font-size: 0.7em;
+  span {
+    display: block;
+    margin-top: 16px;
+    color: white;
+  }
 }
