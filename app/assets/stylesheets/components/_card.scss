@@ -13,8 +13,7 @@
 }
 
 .carousel-item img {
-  width: 100%;
-  height: 200px;
+  width:100%;
   object-fit: cover;
 }
 
@@ -24,15 +23,20 @@
   left: 50%;
   transform: translate(-50%, -50%);
   color:white;
+ }
+
+.carousel-item {
+  height:200px;
 }
 
+
 .card-body p {
-  color: black;
-  font-size: 1em;
+  color: grey;
+  font-size: 1.4em;
 }
 
 .reviews {
-  width: 30em;
+  width: 90vw;
   display: flex;
   overflow-x: scroll;
 }
@@ -44,8 +48,8 @@
   padding-bottom: 10px;
 }
 
-.btn-primary {
-  max-width: 75%;
+.button-container {
+  padding: 0 30px;
 }
 
 .stars {
@@ -53,8 +57,7 @@
   opacity: 0.6;
   padding-left: 2em;
 }
-.button-container{
-  padding: 0 20px;
-  font-weight: bolder;
-  font-family: 'Source Sans Pro', sans-serif;
+
+.stars p {
+  color: white;
 }
